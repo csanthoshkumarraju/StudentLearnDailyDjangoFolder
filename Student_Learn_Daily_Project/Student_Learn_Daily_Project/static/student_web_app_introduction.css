@@ -1,0 +1,5137 @@
+/* body css for avoiding 4 sides padding and border of webpage */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  /* Media Queries for all screens  */
+  
+  /* @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+          
+  }
+   
+  @media only screen and (min-width: 800px) and (max-width: 1140px) {
+  }
+  
+  @media only screen and (min-width: 640px) and (max-width: 799px) {
+  }
+  
+  @media (min-width: 481px) and (max-width: 639px) {
+  }
+  
+  @media (max-width: 480px) { 
+  } */
+  
+  /* Media Queries for all screens */
+  
+  /* 60% purple background 30% white text 10% orange  */
+  /* .Entire-page {
+    background-color:red;
+  } */
+  
+  /* ************************************************************************* */
+  /*                          Nav Bar Section Start                            */
+  /* ************************************************************************* */
+  
+  
+  .student-nav-bar {
+     background-color:#9381FF;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 1rem;
+     border-bottom: 2px solid #6a5acd;
+     position: fixed;
+     width: 98%; 
+     top: 0;
+     left: 0;
+  
+  }
+  
+  .student-icon-logo {
+      display:flex;
+      align-items:center;
+      gap:0.6rem;
+      margin-left:0.4rem;
+  }
+  
+  .student-nav-links {
+      list-style:none;
+      border:none;
+      display:flex;
+      align-items:center;
+      gap:0.4rem;
+      text-decoration: none;
+      font-size:1.2rem;
+      font-family:Helvetica;
+      
+    
+  }
+  
+  .student-nav-links-li a {
+      text-decoration: none;
+      color:white;
+  }
+  
+  .student-nav-links a:hover {
+      color: black; 
+  }
+  
+  .student-reg-log-icon {
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    font-family:Helvetica;
+    font-size:1.5rem;
+  }
+  
+  .study-logo {
+      font-size:2.3rem;
+      
+  }
+  
+  .student-learn-daily-logo {
+      font-size:1.5rem;
+      font-family:American Typewriter;
+  }
+  
+  .student-profile {
+      font-size:2rem;
+  }
+  
+  .student-nav-links-dropdown {
+     display:none;
+  }
+  
+  .dropdown-trigger {
+     display:none;
+  }
+  
+  .SLD-Menu {
+     display:none;
+  }
+  
+  .student-nav-links-dropdown-SLD-Menu {
+      display:none;
+  }
+  
+  /* Largest devices such as desktops (1280px and up) */
+  @media only screen and (min-width: 1280px) {
+    /* Styles for desktops and larger screens */
+  }
+  
+  @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+          
+  }
+   
+  @media only screen and (min-width: 800px) and (max-width: 1140px) {
+           .student-nav-links {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-template-rows: repeat(3, auto);
+              gap: 0.4rem;
+              font-size: 1.2rem;
+              font-family: Helvetica;
+              border: none; 
+              list-style: none; 
+          }
+  
+          .student-nav-links a {
+              display: block;
+              padding: 0.1rem;
+              text-align: center;
+              text-decoration: none; 
+              color: white; 
+          }
+  /*           .student-nav-links-li a {
+            text-decoration: none;
+            color:white;
+        } */
+  
+        .student-nav-links a:hover {
+            color: black; 
+        }
+  
+  }
+  
+  
+  /* Small devices such as large phones (640px and up) */
+  @media only screen and (min-width: 640px) and (max-width: 799px) {
+                 .student-icon-logo {
+                  display:flex;
+                  align-items:center;
+                  gap:0.2rem;
+                  margin-left:0.3rem;
+              }
+                .student-reg-log-icon {
+                display:flex;
+                align-items:center;
+                gap:0.9rem;
+                font-family:Helvetica;
+                font-size:1rem;
+                margin-right:5%;
+              }
+  
+              .study-logo {
+                  font-size:1.5rem;
+  
+              }
+  
+              .student-learn-daily-logo {
+                  font-size:1rem;
+                  font-family:American Typewriter;
+              }
+  
+              .student-profile {
+                  font-size:1.5rem;
+              }
+  
+                .student-nav-links {
+                     display:none;
+                }
+            .dropdown-trigger {
+          display: block;
+      }
+  
+      .dropdown-container:hover .student-nav-links-dropdown {
+          display: block;
+      }
+      
+      .student-nav-links-dropdown {
+          position: absolute;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          background-color: #fff;
+          border: 1px solid #ccc;
+      }
+  
+      .student-nav-links-li {
+          padding: 10px;
+      }
+  
+      .student-nav-links-li a {
+          text-decoration: none;
+          color: #000;
+      }
+  
+      .dropdown-container {
+          position: relative;
+      }
+  
+  }
+  
+  /* Low resolution Tablets and iPads */
+  
+  @media (min-width: 481px) and (max-width: 639px) {
+          .student-nav-links {
+              display: none;
+          }
+  
+          .student-icon-logo {
+          display:flex;
+          align-items:center;
+          gap:0.4rem;
+          margin-left:0.7rem;
+      }
+  
+          .student-reg-log-icon {
+          display:flex;
+          align-items:center;
+          gap:0.3rem;
+          font-family:Helvetica;
+          font-size:1.2rem;
+          margin-right:9%;
+        }
+        
+        .student-learn-daily-logo {
+            font-size:0.9rem;
+            font-family:American Typewriter;
+        }
+  
+        .student-profile {
+            font-size:1.1rem;
+        }
+  
+    
+      .SLD-Menu {
+          display: block; 
+          font-size: 1.5rem; 
+          color: white; 
+      }
+  
+      .student-nav-links-dropdown-SLD-Menu {
+          display: none;
+          position: absolute;
+          top: 100%; 
+          left: 0;
+          background-color: #333;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          z-index: 1000; 
+          font-size:0.9rem;
+      }
+  
+      .SLD-Menu:hover .student-nav-links-dropdown-SLD-Menu {
+          display: block;
+      }
+  
+      .student-nav-links-dropdown-SLD-Menu li {
+          border-bottom: 1px solid #444;
+      }
+  
+      .student-nav-links-dropdown-SLD-Menu li:last-child {
+          border-bottom: none;
+      }
+  
+      .student-nav-links-dropdown-SLD-Menu a {
+          display: block;
+          padding: 3px;
+          color: white;
+          text-decoration: none;
+      }
+  
+      .student-nav-links-dropdown-SLD-Menu a:hover {
+          background-color: #555;
+      }
+  }
+  
+  
+  
+  
+  /* Mobile Devices */
+  @media (max-width: 480px) {
+       .student-nav-links {
+              display: none;
+          }
+  
+          .student-icon-logo {
+          display:flex;
+          align-items:center;
+          gap:0.3rem;
+          margin-left:0.5rem;
+      }
+  
+          .student-reg-log-icon {
+          display:flex;
+          align-items:center;
+          gap:0.2rem;
+          font-family:Helvetica;
+          font-size:1rem;
+          margin-right:7%;
+        }
+        
+        .student-learn-daily-logo {
+            font-size:1rem;
+            font-family:American Typewriter;
+        }
+  
+        .student-profile {
+            font-size:1.4rem;
+        }
+  
+    
+      .SLD-Menu {
+          display: block; 
+          font-size: 1rem; 
+          color: white; 
+      }
+  
+      .student-nav-links-dropdown-SLD-Menu {
+          display: none;
+          position: absolute;
+          top: 100%; 
+          left: 0;
+          background-color: #333;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          z-index: 1000; 
+          font-size:0.7rem;
+      }
+  
+      .SLD-Menu:hover .student-nav-links-dropdown-SLD-Menu {
+          display: block;
+      }
+  
+      .student-nav-links-dropdown-SLD-Menu li {
+          border-bottom: 0.8px solid #444;
+      }
+  
+      .student-nav-links-dropdown-SLD-Menu li:last-child {
+          border-bottom: none;
+      }
+  
+      .student-nav-links-dropdown-SLD-Menu a {
+          display: block;
+          padding: 3px;
+          color: white;
+          text-decoration: none;
+      }
+  
+      .student-nav-links-dropdown-SLD-Menu a:hover {
+          background-color: #555;
+      }
+  }
+  
+  
+  /* ************************************************************************* */
+  /*                          Nav Bar Section End                            */
+  /* ************************************************************************* */
+  
+  
+  /* ************************************************************************* */
+  /*                        Home Work Section Start                            */
+  /* ************************************************************************* */
+  
+  .Student-Homework-section {
+      margin-top: 3.8rem;
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .home-work-heading {
+      text-align: center;
+      padding: 2rem;
+  }
+  
+  .ahw-H {
+      text-align: center;
+  }
+  
+  .add-form {
+      width: 25rem;
+      height: auto;
+      margin: 0 auto;
+      padding: 1.25rem;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      background-color: #C0C0FF;
+  }
+  
+  .form-row {
+      display: flex;
+      align-items: center;
+      gap: 0.9375rem;
+  }
+  
+  .label {
+      width: 7.5rem;
+      font-size: 1.2rem;
+  }
+  
+  .text-input {
+      flex: 1;
+      padding: 0.5rem;
+      box-sizing: border-box;
+  }
+  
+  .submit-button {
+      width: auto;
+      padding: 0.625rem 0.9375rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+  }
+  
+  .submit-button:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  .LHTH {
+      text-align: center;
+  }
+  
+  .list-of-home-work {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+  }
+  
+  .list-hw-table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+  
+  .list-hw-table th, 
+  .list-hw-table td {
+      border: 0.063rem solid #1F51FF;
+      padding: 0.3rem;
+      box-sizing: border-box;
+  }
+  
+  .list-hw-table th {
+      background-color: #AAA1FF;
+  }
+  
+  .In-Progress-btn {
+      width: auto;
+      height: auto;
+      padding: 0.2rem;
+      background-color: #FF5F15;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      margin-left: 2rem;
+  }
+  
+  .In-Progress-btn:hover {
+      color: #FF5F15;
+      background-color: white;
+  }
+  
+  .HIPH {
+      text-align: center;
+  }
+  
+  .homework-in-progress {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      margin: 0 auto;
+      border: 0.063rem solid #FF4500;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+  }
+  
+  .home-work-in-progress-tb {
+      width: 100%;
+      border-collapse: collapse;
+  }
+  
+  .home-work-in-progress-tb th, 
+  .home-work-in-progress-tb td {
+      border: 0.063rem solid #FF4500;
+      padding: 0.3rem;
+      box-sizing: border-box;
+  }
+  
+  .home-work-in-progress-tb th {
+      background-color: #AAA1FF;
+  }
+  
+  .Complete-btn {
+      width: auto;
+      height: auto;
+      padding: 0.2rem;
+      background-color: #4CBB17;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      margin-left: 2rem;
+  }
+  
+  .Complete-btn:hover {
+      color: #4CBB17;
+      background-color: white;
+  }
+  
+  .SCHDH {
+      text-align: center;
+  }
+  
+  .SHD-form {
+      margin-left: 3rem;
+  }
+  
+  .Search-btn {
+      width: auto;
+      height: auto;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+  }
+  
+  .Search-btn:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  .search-day-homework {
+      width: 100%;
+      max-width: 20rem;
+      height: auto;
+      margin: 0 auto;
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+  }
+  
+  .particular-day-home-work-tb {
+      width: 100%;
+      border-collapse: collapse;
+  }
+  
+  
+  
+  .particular-day-home-work-tb th, 
+  .particular-day-home-work-tb td {
+      border: 0.063rem solid #1DB954;
+      padding: 0.3rem;
+      box-sizing: border-box;
+      max-width: 8rem; /* Ensure cells do not overflow */
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  
+  .particular-day-home-work-tb th {
+      background-color: #AAA1FF;
+  }
+  
+  .ACHH {
+      text-align: center;
+  }
+  
+  .completed-homework {
+      width: 100%;
+      max-width: 25rem;
+      height: auto;
+      margin: 0 auto;
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+  }
+  
+  .ACH-tb {
+      width: 100%;
+      border-collapse: collapse;
+  }
+  
+  .ACH-tb th, 
+  .ACH-tb td {
+      border: 0.063rem solid #1DB954;
+      padding: 0.3rem;
+      box-sizing: border-box;
+      max-width: 8rem; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  
+  .ACH-tb th {
+      background-color: #AAA1FF;
+  }
+  
+  
+  
+  /* Styles for screens between 1141px and 1279px */
+  @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+      .add-form {
+          width: 30rem;
+      }
+      
+      .list-of-home-work, .homework-in-progress, .completed-homework {
+          max-width: 50rem;
+      }
+      
+      .search-day-homework {
+          max-width: 25rem;
+      }
+  
+      .label {
+          width: 10rem;
+      }
+  
+      .text-input {
+          padding: 0.75rem;
+      }
+  }
+  
+  /* Styles for screens between 800px and 1140px */
+  @media only screen and (min-width: 850px) and (max-width: 1140px) {
+      .add-form {
+          width: 28rem;
+      }
+  
+      .list-of-home-work, .homework-in-progress, .completed-homework {
+          max-width: 45rem;
+      }
+      
+      .search-day-homework {
+          max-width: 22rem;
+      }
+  
+      .label {
+          width: 9rem;
+      }
+  
+      .text-input {
+          padding: 0.6rem;
+      }
+  }
+  
+  /* Styles for screens between 640px and 799px */
+  @media only screen and (min-width: 760px) and (max-width: 849px) {
+      .add-form {
+          width: 24rem;
+      }
+      
+      .list-of-home-work, .homework-in-progress, .completed-homework {
+          max-width: 40rem;
+      }
+  
+      .search-day-homework {
+          max-width: 20rem;
+      }
+  
+      .label {
+          width: 8rem;
+      }
+  
+      .text-input {
+          padding: 0.5rem;
+      }
+  }
+  
+  /* Styles for screens between 481px and 639px */
+  @media only screen and (min-width: 670px) and (max-width: 759px) {
+      .add-form {
+          width: 20rem;
+      }
+  
+      .list-of-home-work, .homework-in-progress, .completed-homework {
+          max-width: 35rem;
+      }
+  
+      .search-day-homework {
+          max-width: 18rem;
+      }
+  
+      .label {
+          width: 7rem;
+      }
+  
+      .text-input {
+          padding: 0.4rem;
+      }
+  }
+  
+  /* Styles for screens 480px and below */
+  @media (max-width: 669px) {
+      .add-form {
+          width: 100%;
+          padding: 0.4rem;
+          margin: 1.5rem auto;
+      }
+  
+      .list-of-home-work, .homework-in-progress, .completed-homework, .search-day-homework {
+          width: 100%;
+          padding: 0.4rem;
+          margin: 1.5rem auto;
+      }
+  
+      .label {
+          width: auto;
+          font-size: 0.6rem;
+      }
+  
+      .text-input {
+          padding: 0.15rem;
+          font-size: 0.6rem;
+      }
+  
+      .form-row {
+          flex-direction: column;
+          gap: 0.25rem;
+      }
+  
+      .In-Progress-btn, .Complete-btn, .Search-btn {
+          width: 100%;
+          padding: 0.3rem;
+          margin: 0.5rem 0;
+      }
+  
+      .list-hw-table, .home-work-in-progress-tb, .particular-day-home-work-tb, .ACH-tb {
+          font-size: 0.6rem;
+      }
+  
+      .list-hw-table th, .list-hw-table td, 
+      .home-work-in-progress-tb th, .home-work-in-progress-tb td, 
+      .particular-day-home-work-tb th, .particular-day-home-work-tb td, 
+      .ACH-tb th, .ACH-tb td {
+          padding: 0.15rem;
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ************************************************************************* */
+  /*                         Home Work Section End                            */
+  /* ************************************************************************* */
+  
+  
+  /* ************************************************************************* */
+  /*                          Assignment Section Start                         */
+  /* ************************************************************************* */
+  
+  .Student-Assignment-section {
+  /*        margin-top: 3.8rem; */
+         background-color: #CCCCFF;
+         padding: 1.5rem;
+    
+  }
+  
+  .Assignment-heading {
+       text-align:center;
+       padding:3.3rem;
+  }
+  
+  .add-assignment-form-div {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .Add-assignment-input-box {
+      width: 30rem;
+      height: 10rem;
+      margin: 2rem;
+  }
+  
+  .assignment-submit-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .assignment-submit-button:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  .assignment-to-do-heading {
+       text-align:center;
+  }
+  
+  .assignment-to-do {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .assignment-to-do-list-p {
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      width:30rem;
+      height:auto;
+      padding:1rem;
+      margin-left:4rem;
+      text-align:center;
+      text-align: justify;
+  }
+  
+  .assignment-to-do-in-progress-btn {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #FF5F15;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .assignment-to-do-in-progress-btn:hover {
+      color: #FF5F15;
+      background-color: white;
+  }
+  
+  
+  .assignment-in-progress {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #FF4500;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .assignment-in-progress-list-p {
+      border: 0.063rem solid #FF4500;
+      border-radius: 0.3125rem;
+      width:30rem;
+      height:auto;
+      padding:1rem;
+      margin-left:4rem;
+      text-align:center;
+      text-align: justify;
+  }
+  
+  .assignment-complete-btn {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #4CBB17;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .assignment-complete-btn:hover {
+      color: #4CBB17;
+      background-color: white;
+  }
+  
+  .assignments-all-completed {
+     width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+    
+  }
+  
+  .assignment-completed-list-p {
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      width:30rem;
+      height:auto;
+      padding:1rem;
+      margin-left:4rem;
+      text-align:center;
+      text-align: justify;
+  }
+  
+  
+  /* @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+          
+  } */
+  /*  
+  @media only screen and (min-width: 800px) and (max-width: 1140px) {
+  } */
+  
+  @media only screen and (min-width: 640px) and (max-width: 799px) {
+             .add-assignment-form-div {
+                  width: 100%;
+                  max-width: 30rem;
+                  height: auto;
+                  border: 0.063rem solid #1F51FF;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+              }
+  
+              .Add-assignment-input-box {
+                  width: 25rem;
+                  height: 10rem;
+                  margin: 2rem;
+              }
+  
+              .assignment-submit-button {
+                  width: auto;
+                  height: auto;
+                  padding: 0.5rem 1rem;
+                  background-color: #3F00FF;
+                  color: #fff;
+                  border: 0.1rem solid grey;
+                  border-radius: 0.1875rem;
+                  cursor: pointer;
+                  text-align: center;
+                  display: inline-block;
+              }
+  
+              .assignment-submit-button:hover {
+                  color: #6F00FF;
+                  background-color: white;
+              }
+  
+              .assignment-to-do-heading {
+                   text-align:center;
+              }
+  
+              .assignment-to-do {
+                  width: 100%;
+                  max-width: 30rem;
+                  height: auto;
+                  border: 0.063rem solid #1F51FF;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+              }
+  
+              .assignment-to-do-list-p {
+                  border: 0.063rem solid #1F51FF;
+                  border-radius: 0.3125rem;
+                  width:25rem;
+                  height:auto;
+                  padding:1rem;
+                  margin:auto;
+                  text-align:center;
+                  text-align: justify;
+              }
+  
+              .assignment-to-do-in-progress-btn {
+                  width: auto;
+                  height: auto;
+                  padding: 0.5rem 1rem;
+                  background-color: #FF5F15;
+                  color: #fff;
+                  border: 0.1rem solid grey;
+                  border-radius: 0.1875rem;
+                  cursor: pointer;
+                  text-align: center;
+                  display: inline-block;
+                  margin:1rem;
+              }
+  
+              .assignment-to-do-in-progress-btn:hover {
+                  color: #FF5F15;
+                  background-color: white;
+              }
+  
+  
+              .assignment-in-progress {
+                  width: 100%;
+                  max-width: 30rem;
+                  height: auto;
+                  border: 0.063rem solid #FF4500;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+              }
+  
+              .assignment-in-progress-list-p {
+                  border: 0.063rem solid #FF4500;
+                  border-radius: 0.3125rem;
+                  width:25rem;
+                  height:auto;
+                  padding:1rem;
+                  margin:auto;
+                  text-align:center;
+                  text-align: justify;
+              }
+  
+              .assignment-complete-btn {
+                  width: auto;
+                  height: auto;
+                  padding: 0.5rem 1rem;
+                  background-color: #4CBB17;
+                  color: #fff;
+                  border: 0.1rem solid grey;
+                  border-radius: 0.1875rem;
+                  cursor: pointer;
+                  text-align: center;
+                  display: inline-block;
+                  margin:1rem;
+              }
+  
+              .assignment-complete-btn:hover {
+                  color: #4CBB17;
+                  background-color: white;
+              }
+  
+              .assignments-all-completed {
+                 width: 100%;
+                  max-width: 30rem;
+                  height: auto;
+                  border: 0.063rem solid #1DB954;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+  
+              }
+  
+              .assignment-completed-list-p {
+                  border: 0.063rem solid #1DB954;
+                  border-radius: 0.3125rem;
+                  width:25rem;
+                  height:auto;
+                  padding:1rem;
+                  margin:1.5rem auto;
+                  text-align:center;
+                  text-align: justify;
+              }
+    
+    
+    
+  }
+  
+  @media (min-width: 481px) and (max-width: 639px) {
+         .add-assignment-form-div {
+                  width: 80%;
+                  max-width: 25rem;
+                  height: auto;
+                  border: 0.063rem solid #1F51FF;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+              }
+  
+              .Add-assignment-input-box {
+                  width: 20rem;
+                  height: 10rem;
+                  margin: 2rem;
+              }
+  
+              .assignment-submit-button {
+                  width: auto;
+                  height: auto;
+                  padding: 0.5rem 1rem;
+                  background-color: #3F00FF;
+                  color: #fff;
+                  border: 0.1rem solid grey;
+                  border-radius: 0.1875rem;
+                  cursor: pointer;
+                  text-align: center;
+                  display: inline-block;
+              }
+  
+              .assignment-submit-button:hover {
+                  color: #6F00FF;
+                  background-color: white;
+              }
+  
+              .assignment-to-do-heading {
+                   text-align:center;
+              }
+  
+              .assignment-to-do {
+                  width: 80%;
+                  max-width: 25rem;
+                  height: auto;
+                  border: 0.063rem solid #1F51FF;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+              }
+  
+              .assignment-to-do-list-p {
+                  border: 0.063rem solid #1F51FF;
+                  border-radius: 0.3125rem;
+                  width:20rem;
+                  height:auto;
+                  padding:1rem;
+                  margin:auto;
+                  text-align:center;
+                  text-align: justify;
+              }
+  
+              .assignment-to-do-in-progress-btn {
+                  width: auto;
+                  height: auto;
+                  padding: 0.5rem 1rem;
+                  background-color: #FF5F15;
+                  color: #fff;
+                  border: 0.1rem solid grey;
+                  border-radius: 0.1875rem;
+                  cursor: pointer;
+                  text-align: center;
+                  display: inline-block;
+                  margin:1rem;
+              }
+  
+              .assignment-to-do-in-progress-btn:hover {
+                  color: #FF5F15;
+                  background-color: white;
+              }
+  
+  
+              .assignment-in-progress {
+                  width: 80%;
+                  max-width: 25rem;
+                  height: auto;
+                  border: 0.063rem solid #FF4500;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+              }
+  
+              .assignment-in-progress-list-p {
+                  border: 0.063rem solid #FF4500;
+                  border-radius: 0.3125rem;
+                  width:20rem;
+                  height:auto;
+                  padding:1rem;
+                  margin:auto;
+                  text-align:center;
+                  text-align: justify;
+              }
+  
+              .assignment-complete-btn {
+                  width: auto;
+                  height: auto;
+                  padding: 0.5rem 1rem;
+                  background-color: #4CBB17;
+                  color: #fff;
+                  border: 0.1rem solid grey;
+                  border-radius: 0.1875rem;
+                  cursor: pointer;
+                  text-align: center;
+                  display: inline-block;
+                  margin:1rem;
+              }
+  
+              .assignment-complete-btn:hover {
+                  color: #4CBB17;
+                  background-color: white;
+              }
+  
+              .assignments-all-completed {
+                 width: 80%;
+                  max-width: 25rem;
+                  height: auto;
+                  border: 0.063rem solid #1DB954;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+  
+              }
+  
+              .assignment-completed-list-p {
+                  border: 0.063rem solid #1DB954;
+                  border-radius: 0.3125rem;
+                  width:20rem;
+                  height:auto;
+                  padding:1rem;
+                  margin:1.5rem auto;
+                  text-align:center;
+                  text-align: justify;
+              }
+    
+    
+  }
+  
+  @media (max-width: 480px) { 
+      .add-assignment-form-div {
+                  width: 70%;
+                  max-width: 20rem;
+                  height: auto;
+                  border: 0.063rem solid #1F51FF;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+              }
+  
+              .Add-assignment-input-box {
+                  width: 65%;
+                  max-width: 20rem;
+                  height: 10rem;
+                  margin: 2rem;
+              }
+  
+              .assignment-submit-button {
+                  width: auto;
+                  height: auto;
+                  padding: 0.5rem 1rem;
+                  background-color: #3F00FF;
+                  color: #fff;
+                  border: 0.1rem solid grey;
+                  border-radius: 0.1875rem;
+                  cursor: pointer;
+                  text-align: center;
+                  display: inline-block;
+              }
+  
+              .assignment-submit-button:hover {
+                  color: #6F00FF;
+                  background-color: white;
+              }
+  
+              .assignment-to-do-heading {
+                   text-align:center;
+              }
+  
+              .assignment-to-do {
+                  width: 70%;
+                  max-width: 20rem;
+                  height: auto;
+                  border: 0.063rem solid #1F51FF;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+              }
+  
+              .assignment-to-do-list-p {
+                  border: 0.063rem solid #1F51FF;
+                  border-radius: 0.3125rem;
+                  width:12rem;
+                  height:auto;
+                  padding:1rem;
+                  margin:auto;
+                  text-align:center;
+                  text-align: justify;
+              }
+  
+              .assignment-to-do-in-progress-btn {
+                  width: auto;
+                  height: auto;
+                  padding: 0.5rem 1rem;
+                  background-color: #FF5F15;
+                  color: #fff;
+                  border: 0.1rem solid grey;
+                  border-radius: 0.1875rem;
+                  cursor: pointer;
+                  text-align: center;
+                  display: inline-block;
+                  margin:1rem;
+              }
+  
+              .assignment-to-do-in-progress-btn:hover {
+                  color: #FF5F15;
+                  background-color: white;
+              }
+  
+  
+              .assignment-in-progress {
+                  width: 70%;
+                  max-width: 20rem;
+                  height: auto;
+                  border: 0.063rem solid #FF4500;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+              }
+  
+              .assignment-in-progress-list-p {
+                  border: 0.063rem solid #FF4500;
+                  border-radius: 0.3125rem;
+                  width:12rem;
+                  height:auto;
+                  padding:1rem;
+                  margin:auto;
+                  text-align:center;
+                  text-align: justify;
+              }
+  
+              .assignment-complete-btn {
+                  width: auto;
+                  height: auto;
+                  padding: 0.5rem 1rem;
+                  background-color: #4CBB17;
+                  color: #fff;
+                  border: 0.1rem solid grey;
+                  border-radius: 0.1875rem;
+                  cursor: pointer;
+                  text-align: center;
+                  display: inline-block;
+                  margin:1rem;
+              }
+  
+              .assignment-complete-btn:hover {
+                  color: #4CBB17;
+                  background-color: white;
+              }
+  
+              .assignments-all-completed {
+                 width: 70%;
+                  max-width: 20rem;
+                  height: auto;
+                  border: 0.063rem solid #1DB954;
+                  border-radius: 0.3125rem;
+                  padding: 2rem;
+                  margin: 3rem auto;
+                  background-color: #C0C0FF;
+                  text-align: center;
+  
+              }
+  
+              .assignment-completed-list-p {
+                  border: 0.063rem solid #1DB954;
+                  border-radius: 0.3125rem;
+                  width:12rem;
+                  height:auto;
+                  padding:1rem;
+                  margin:1.5rem auto;
+                  text-align:center;
+                  text-align: justify;
+              }
+   
+    
+  }
+  
+  
+  
+  /* ************************************************************************* */
+  /*                         Assignment Section End                            */
+  /* ************************************************************************* */
+  
+  
+  /* ************************************************************************* */
+  /*                          Daily plans Section Start                        */
+  /* ************************************************************************* */
+  
+  
+  .Student-daily-plan-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .student-daily-heading {
+       text-align:center;
+       padding:3.3rem;
+  }
+  
+  .add-daily-plan-form {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .Add-daily-plan-input-box {
+      width: 25rem;
+      height: 3rem;
+      margin: 1rem;
+  }
+  
+  .add-daily-plan-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .add-daily-plan-button:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  .daily-plans-to-do-heading {
+       text-align:center;
+  }
+  
+  .daily-plans-to-do {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .daily-plans-to-do-list-p {
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      width:30rem;
+      height:auto;
+      padding:1rem;
+      margin-left:4rem;
+      text-align:center;
+      text-align: justify;
+  }
+  
+  .daily-plans-to-do-in-progress-btn {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #FF5F15;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .daily-plans-to-do-in-progress-btn:hover {
+      color: #FF5F15;
+      background-color: white;
+  }
+  
+  
+  .daily-plan-in-progress {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #FF4500;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .daily-plan-in-progress-list-p {
+      border: 0.063rem solid #FF4500;
+      border-radius: 0.3125rem;
+      width:30rem;
+      height:auto;
+      padding:1rem;
+      margin-left:4rem;
+      text-align:center;
+      text-align: justify;
+  }
+  
+  .daily-plan-complete-btn {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #4CBB17;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .daily-plan-complete-btn:hover {
+      color: #4CBB17;
+      background-color: white;
+  }
+  
+  .daily-plans-all-completed {
+     width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+    
+  }
+  
+  .daily-plans-completed-list-p {
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      width:30rem;
+      height:auto;
+      padding:1rem;
+      margin-left:4rem;
+      text-align:center;
+      text-align: justify;
+  }
+  
+  
+  /* @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+          
+  } */
+  /*  
+  @media only screen and (min-width: 800px) and (max-width: 1140px) {
+  } */
+  
+  
+  @media only screen and (min-width: 640px) and (max-width: 799px) {
+      .add-daily-plan-form {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .Add-daily-plan-input-box {
+          width: 25rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .add-daily-plan-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-daily-plan-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .daily-plans-to-do-heading {
+          text-align:center;
+      }
+  
+      .daily-plans-to-do {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .daily-plans-to-do-list-p {
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height:auto;
+          padding:1rem;
+          margin:auto;
+          text-align:center;
+          text-align: justify;
+      }
+  
+      .daily-plans-to-do-in-progress-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin:1rem;
+      }
+  
+      .daily-plans-to-do-in-progress-btn:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .daily-plan-in-progress {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .daily-plan-in-progress-list-p {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height:auto;
+          padding:1rem;
+          margin:auto;
+          text-align:center;
+          text-align: justify;
+      }
+  
+      .daily-plan-complete-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin:1rem;
+      }
+  
+      .daily-plan-complete-btn:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .daily-plans-all-completed {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .daily-plans-completed-list-p {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height:auto;
+          padding:1rem;
+          margin:1.5rem auto;
+          text-align:center;
+          text-align: justify;
+      }
+  }
+  
+  @media (min-width: 481px) and (max-width: 639px) {
+      .add-daily-plan-form {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .Add-daily-plan-input-box {
+          width: 20rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .add-daily-plan-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-daily-plan-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .daily-plans-to-do-heading {
+          text-align:center;
+      }
+  
+      .daily-plans-to-do {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .daily-plans-to-do-list-p {
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height:auto;
+          padding:1rem;
+          margin:auto;
+          text-align:center;
+          text-align: justify;
+      }
+  
+      .daily-plans-to-do-in-progress-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin:1rem;
+      }
+  
+      .daily-plans-to-do-in-progress-btn:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .daily-plan-in-progress {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .daily-plan-in-progress-list-p {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height:auto;
+          padding:1rem;
+          margin:auto;
+          text-align:center;
+          text-align: justify;
+      }
+  
+      .daily-plan-complete-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin:1rem;
+      }
+  
+      .daily-plan-complete-btn:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .daily-plans-all-completed {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .daily-plans-completed-list-p {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height:auto;
+          padding:1rem;
+          margin:1.5rem auto;
+          text-align:center;
+          text-align: justify;
+      }
+  }
+  
+  
+  @media (max-width: 480px) { 
+      .add-daily-plan-form {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .Add-daily-plan-input-box {
+          width: 65%;
+          max-width: 20rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .add-daily-plan-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-daily-plan-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .daily-plans-to-do-heading {
+          text-align: center;
+      }
+  
+      .daily-plans-to-do {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .daily-plans-to-do-list-p {
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .daily-plans-to-do-in-progress-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .daily-plans-to-do-in-progress-btn:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .daily-plan-in-progress {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .daily-plan-in-progress-list-p {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .daily-plan-complete-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .daily-plan-complete-btn:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .daily-plans-all-completed {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .daily-plans-completed-list-p {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin: 1.5rem auto;
+          text-align: center;
+          text-align: justify;
+      }
+  }
+  
+  
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Daily plans Section End                          */
+  /* ************************************************************************* */
+  
+  
+  /* ************************************************************************* */
+  /*                          Monthly plans Section Start                          */
+  /* ************************************************************************* */
+  
+  
+  .Student-monthly-plan-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .student-monthly-heading {
+      text-align: center;
+      padding: 3.3rem;
+  }
+  
+  .add-monthly-plan-form {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .Add-monthly-plan-input-box {
+      width: 25rem;
+      height: 3rem;
+      margin: 1rem;
+  }
+  
+  .add-monthly-plan-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .add-monthly-plan-button:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  .monthly-plans-to-do-heading {
+      text-align: center;
+  }
+  
+  .monthly-plans-to-do {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .monthly-plans-to-do-list-p {
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      width: 30rem;
+      height: auto;
+      padding: 1rem;
+      margin-left: 4rem;
+      text-align: center;
+      text-align: justify;
+  }
+  
+  .monthly-plans-to-do-in-progress-btn {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #FF5F15;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .monthly-plans-to-do-in-progress-btn:hover {
+      color: #FF5F15;
+      background-color: white;
+  }
+  
+  .monthly-plan-in-progress {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #FF4500;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .monthly-plan-in-progress-list-p {
+      border: 0.063rem solid #FF4500;
+      border-radius: 0.3125rem;
+      width: 30rem;
+      height: auto;
+      padding: 1rem;
+      margin-left: 4rem;
+      text-align: center;
+      text-align: justify;
+  }
+  
+  .monthly-plan-complete-btn {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #4CBB17;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .monthly-plan-complete-btn:hover {
+      color: #4CBB17;
+      background-color: white;
+  }
+  
+  .monthly-plans-all-completed {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .monthly-plans-completed-list-p {
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      width: 30rem;
+      height: auto;
+      padding: 1rem;
+      margin-left: 4rem;
+      text-align: center;
+      text-align: justify;
+  }
+  
+  
+  /* @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+          
+  } */
+  /*  
+  @media only screen and (min-width: 800px) and (max-width: 1140px) {
+  } */
+  
+  @media only screen and (min-width: 640px) and (max-width: 799px) {
+      .add-monthly-plan-form {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .Add-monthly-plan-input-box {
+          width: 25rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .add-monthly-plan-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-monthly-plan-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .monthly-plans-to-do-heading {
+          text-align: center;
+      }
+  
+      .monthly-plans-to-do {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .monthly-plans-to-do-list-p {
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .monthly-plans-to-do-in-progress-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .monthly-plans-to-do-in-progress-btn:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .monthly-plan-in-progress {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .monthly-plan-in-progress-list-p {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .monthly-plan-complete-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .monthly-plan-complete-btn:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .monthly-plans-all-completed {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .monthly-plans-completed-list-p {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height: auto;
+          padding: 1rem;
+          margin: 1.5rem auto;
+          text-align: center;
+          text-align: justify;
+      }
+  }
+  
+  
+  
+  @media (min-width: 481px) and (max-width: 639px) {
+      .add-monthly-plan-form {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .Add-monthly-plan-input-box {
+          width: 20rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .add-monthly-plan-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-monthly-plan-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .monthly-plans-to-do-heading {
+          text-align: center;
+      }
+  
+      .monthly-plans-to-do {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .monthly-plans-to-do-list-p {
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .monthly-plans-to-do-in-progress-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .monthly-plans-to-do-in-progress-btn:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .monthly-plan-in-progress {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .monthly-plan-in-progress-list-p {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .monthly-plan-complete-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .monthly-plan-complete-btn:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .monthly-plans-all-completed {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .monthly-plans-completed-list-p {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height: auto;
+          padding: 1rem;
+          margin: 1.5rem auto;
+          text-align: center;
+          text-align: justify;
+      }
+  }
+  
+  
+  @media (max-width: 480px) {
+      .add-monthly-plan-form {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .Add-monthly-plan-input-box {
+          width: 65%;
+          max-width: 20rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .add-monthly-plan-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-monthly-plan-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .monthly-plans-to-do-heading {
+          text-align: center;
+      }
+  
+      .monthly-plans-to-do {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .monthly-plans-to-do-list-p {
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .monthly-plans-to-do-in-progress-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .monthly-plans-to-do-in-progress-btn:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .monthly-plan-in-progress {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .monthly-plan-in-progress-list-p {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .monthly-plan-complete-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .monthly-plan-complete-btn:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .monthly-plans-all-completed {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .monthly-plans-completed-list-p {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin: 1.5rem auto;
+          text-align: center;
+          text-align: justify;
+      }
+  }
+  
+  
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Monthly plans Section End                        */
+  /* ************************************************************************* */
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Yearly plans Section Start                        */
+  /* ************************************************************************* */
+  
+  .Student-yearly-plan-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .student-yearly-heading {
+      text-align: center;
+      padding: 3.3rem;
+  }
+  
+  .add-yearly-plan-form {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .Add-yearly-plan-input-box {
+      width: 25rem;
+      height: 3rem;
+      margin: 1rem;
+  }
+  
+  .add-yearly-plan-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .add-yearly-plan-button:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  .yearly-plans-to-do-heading {
+      text-align: center;
+  }
+  
+  .yearly-plans-to-do {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .yearly-plans-to-do-list-p {
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      width: 30rem;
+      height: auto;
+      padding: 1rem;
+      margin-left: 4rem;
+      text-align: center;
+      text-align: justify;
+  }
+  
+  .yearly-plans-to-do-in-progress-btn {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #FF5F15;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .yearly-plans-to-do-in-progress-btn:hover {
+      color: #FF5F15;
+      background-color: white;
+  }
+  
+  .yearly-plan-in-progress {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #FF4500;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .yearly-plan-in-progress-list-p {
+      border: 0.063rem solid #FF4500;
+      border-radius: 0.3125rem;
+      width: 30rem;
+      height: auto;
+      padding: 1rem;
+      margin-left: 4rem;
+      text-align: center;
+      text-align: justify;
+  }
+  
+  .yearly-plan-complete-btn {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #4CBB17;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .yearly-plan-complete-btn:hover {
+      color: #4CBB17;
+      background-color: white;
+  }
+  
+  .yearly-plans-all-completed {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .yearly-plans-completed-list-p {
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      width: 30rem;
+      height: auto;
+      padding: 1rem;
+      margin-left: 4rem;
+      text-align: center;
+      text-align: justify;
+  }
+  
+  
+  
+  /* @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+          
+  } */
+  /*  
+  @media only screen and (min-width: 800px) and (max-width: 1140px) {
+  } */
+  
+  @media only screen and (min-width: 640px) and (max-width: 799px) {
+      .add-yearly-plan-form {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .Add-yearly-plan-input-box {
+          width: 25rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .add-yearly-plan-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-yearly-plan-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .yearly-plans-to-do-heading {
+          text-align: center;
+      }
+  
+      .yearly-plans-to-do {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .yearly-plans-to-do-list-p {
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .yearly-plans-to-do-in-progress-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .yearly-plans-to-do-in-progress-btn:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .yearly-plan-in-progress {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .yearly-plan-in-progress-list-p {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .yearly-plan-complete-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .yearly-plan-complete-btn:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .yearly-plans-all-completed {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .yearly-plans-completed-list-p {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height: auto;
+          padding: 1rem;
+          margin: 1.5rem auto;
+          text-align: center;
+          text-align: justify;
+      }
+  }
+  
+  @media (min-width: 481px) and (max-width: 639px) {
+      .add-yearly-plan-form {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .Add-yearly-plan-input-box {
+          width: 20rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .add-yearly-plan-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-yearly-plan-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .yearly-plans-to-do-heading {
+          text-align: center;
+      }
+  
+      .yearly-plans-to-do {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .yearly-plans-to-do-list-p {
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .yearly-plans-to-do-in-progress-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .yearly-plans-to-do-in-progress-btn:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .yearly-plan-in-progress {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .yearly-plan-in-progress-list-p {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .yearly-plan-complete-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .yearly-plan-complete-btn:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .yearly-plans-all-completed {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .yearly-plans-completed-list-p {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height: auto;
+          padding: 1rem;
+          margin: 1.5rem auto;
+          text-align: center;
+          text-align: justify;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .add-yearly-plan-form {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .Add-yearly-plan-input-box {
+          width: 65%;
+          max-width: 20rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .add-yearly-plan-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-yearly-plan-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .yearly-plans-to-do-heading {
+          text-align: center;
+      }
+  
+      .yearly-plans-to-do {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .yearly-plans-to-do-list-p {
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .yearly-plans-to-do-in-progress-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .yearly-plans-to-do-in-progress-btn:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .yearly-plan-in-progress {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .yearly-plan-in-progress-list-p {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin: auto;
+          text-align: center;
+          text-align: justify;
+      }
+  
+      .yearly-plan-complete-btn {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .yearly-plan-complete-btn:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .yearly-plans-all-completed {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .yearly-plans-completed-list-p {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin: 1.5rem auto;
+          text-align: center;
+          text-align: justify;
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Yearly plans Section End                        */
+  /* ************************************************************************* */
+  
+  
+  /* ************************************************************************* */
+  /*                          Goals plans Section Start                        */
+  /* ************************************************************************* */
+  
+  
+  .Student-goal-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .student-goal-heading {
+    text-align: center;
+      padding: 3.3rem;
+  }
+  
+  
+  .goals-add-form {
+       width: 100%;
+       max-width: 40rem;
+       height: auto;
+       display:flex;
+       justify-content:center;
+       align-content:center;
+       border: 0.063rem solid #1F51FF;
+       border-radius: 0.3125rem;
+       padding: 2rem;
+       margin: 3rem auto;
+       background-color: #C0C0FF;
+       text-align: center;
+  }
+  
+  .add-goal-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .add-goal-button:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  
+  .add-goal-input-box {
+       width: 20rem;
+       height: 5rem;
+       margin: 2rem;
+  }
+  
+  .student-added-goals {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #FF4500;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .student-added-goals-edit {
+      border: 0.063rem solid #FF4500;
+      border-radius: 0.3125rem;
+      width: 30rem;
+      height: auto;
+      padding: 1rem;
+      margin-left: 4rem;
+      text-align: center;
+      text-align: justify;
+      margin-bottom:2rem;
+    
+  }
+  
+  .student-completed-goals {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+    
+  }
+  
+  
+  .student-completed-goals-edit {
+    border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      width: 30rem;
+      height: auto;
+      padding: 1rem;
+      margin-left: 4rem;
+      text-align: center;
+      text-align: justify;
+      margin-bottom:2rem;
+    
+  }
+  
+  
+  .gaol-edit-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #FF5F15;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin: 2rem;
+  }
+  
+  .gaol-edit-button:hover {
+      color: #FF5F15;
+      background-color: white;
+  }
+  
+  
+  .goal-complete-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 2rem;
+      }
+  
+  .goal-complete-button:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+  .goal-delete-button {
+         width: auto;
+         height: auto;
+         padding: 0.5rem 1rem;
+         background-color: #FF0800;
+         color: #fff;
+         border: 0.1rem solid grey;
+         border-radius: 0.1875rem;
+         cursor: pointer;
+         text-align: center;
+         display: inline-block;
+         margin: 2rem;
+  }
+  
+  .goal-delete-button:hover {
+          color: #FF0800;
+          background-color: white;
+      }
+  
+  
+  
+  /* @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+          
+  } */
+  /*  
+  @media only screen and (min-width: 800px) and (max-width: 1140px) {
+  } */
+  
+  @media only screen and (min-width: 640px) and (max-width: 799px) {
+      .goals-add-form {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .add-goal-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-goal-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .add-goal-input-box {
+          width: 25rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .student-added-goals {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .student-added-goals-edit {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height: auto;
+          padding: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          text-align: justify;
+          margin-bottom: 2rem;
+      }
+  
+      .student-completed-goals {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .student-completed-goals-edit {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height: auto;
+          padding: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          text-align: justify;
+          margin-bottom: 2rem;
+      }
+  
+      .gaol-edit-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .gaol-edit-button:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .goal-complete-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .goal-complete-button:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .goal-delete-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF0800;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .goal-delete-button:hover {
+          color: #FF0800;
+          background-color: white;
+      }
+  }
+  
+  @media (min-width: 481px) and (max-width: 639px) {
+      .goals-add-form {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .add-goal-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-goal-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .add-goal-input-box {
+          width: 20rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .student-added-goals {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .student-added-goals-edit {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height: auto;
+          padding: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          text-align: justify;
+          margin-bottom: 2rem;
+      }
+  
+      .student-completed-goals {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .student-completed-goals-edit {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height: auto;
+          padding: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          text-align: justify;
+          margin-bottom: 2rem;
+      }
+  
+      .gaol-edit-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .gaol-edit-button:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .goal-complete-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .goal-complete-button:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .goal-delete-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF0800;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .goal-delete-button:hover {
+          color: #FF0800;
+          background-color: white;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .goals-add-form {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .add-goal-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-goal-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .add-goal-input-box {
+          width: 65%;
+          max-width: 20rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+  
+      .student-added-goals {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .student-added-goals-edit {
+          border: 0.063rem solid #FF4500;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          text-align: justify;
+          margin-bottom: 2rem;
+      }
+  
+      .student-completed-goals {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .student-completed-goals-edit {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          text-align: justify;
+          margin-bottom: 2rem;
+      }
+  
+      .gaol-edit-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .gaol-edit-button:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .goal-complete-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #4CBB17;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .goal-complete-button:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+      .goal-delete-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF0800;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .goal-delete-button:hover {
+          color: #FF0800;
+          background-color: white;
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Goals plans Section End                        */
+  /* ************************************************************************* */
+  
+  
+  /* ************************************************************************* */
+  /*                          Notes Section Start                        */
+  /* ************************************************************************* */
+  
+  .Student-notes-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .student-notes-heading {
+      text-align: center;
+      padding: 3.3rem;
+  }
+  
+  .student-notes-form {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .add-note-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+  }
+  
+  .add-note-button:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  .add-notes-input-box {
+      width: 20rem;
+      height: 5rem;
+      margin: 2rem;
+  }
+  
+  .student-added-notes {
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      margin: 3rem auto;
+      background-color: #C0C0FF;
+      text-align: center;
+  }
+  
+  .student-added-note-edit {
+      border: 0.063rem solid #1DB954;
+      border-radius: 0.3125rem;
+      width: 30rem;
+      height: auto;
+      padding: 1rem;
+      margin-left: 4rem;
+      text-align: center;
+      text-align: justify;
+      margin-bottom: 2rem;
+  }
+  
+  .note-edit-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #FF5F15;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin: 2rem;
+  }
+  
+  .note-edit-button:hover {
+      color: #FF5F15;
+      background-color: white;
+  }
+  
+  .note-delete-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #FF0800;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin: 2rem;
+  }
+  
+  .note-delete-button:hover {
+      color: #FF0800;
+      background-color: white;
+  }
+  
+  /* @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+          
+  } */
+  /*  
+  @media only screen and (min-width: 800px) and (max-width: 1140px) {
+  } */
+  
+  @media only screen and (min-width: 640px) and (max-width: 799px) {
+         .student-notes-form {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .add-note-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-note-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .add-notes-input-box {
+          width: 25rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+     
+      .student-added-notes {
+          width: 100%;
+          max-width: 30rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .student-added-note-edit {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 25rem;
+          height: auto;
+          padding: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          text-align: justify;
+          margin-bottom: 2rem;
+      }
+  
+      .note-edit-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .note-edit-button:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .note-delete-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF0800;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .note-delete-button:hover {
+          color: #FF0800;
+          background-color: white;
+      }
+    
+  }
+  
+  @media (min-width: 481px) and (max-width: 639px) {
+       .student-notes-form {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .add-note-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-note-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .add-notes-input-box {
+          width: 20rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+      
+      .student-added-notes {
+          width: 80%;
+          max-width: 25rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .student-added-note-edit {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 20rem;
+          height: auto;
+          padding: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          text-align: justify;
+          margin-bottom: 2rem;
+      }
+  
+      .note-edit-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .note-edit-button:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .note-delete-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF0800;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .note-delete-button:hover {
+          color: #FF0800;
+          background-color: white;
+      }
+    
+  }
+  
+  @media (max-width: 480px) { 
+          .student-notes-form {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          border: 0.063rem solid #1F51FF;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .add-note-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #3F00FF;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+      .add-goal-button:hover {
+          color: #6F00FF;
+          background-color: white;
+      }
+  
+      .add-notes-input-box {
+          width: 65%;
+          max-width: 20rem;
+          height: 10rem;
+          margin: 2rem;
+      }
+      
+      .student-added-notes {
+          width: 70%;
+          max-width: 20rem;
+          height: auto;
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          padding: 2rem;
+          margin: 3rem auto;
+          background-color: #C0C0FF;
+          text-align: center;
+      }
+  
+      .student-added-note-edit {
+          border: 0.063rem solid #1DB954;
+          border-radius: 0.3125rem;
+          width: 12rem;
+          height: auto;
+          padding: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          text-align: justify;
+          margin-bottom: 2rem;
+      }
+  
+      .note-edit-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF5F15;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .note-edit-button:hover {
+          color: #FF5F15;
+          background-color: white;
+      }
+  
+      .note-delete-button {
+          width: auto;
+          height: auto;
+          padding: 0.5rem 1rem;
+          background-color: #FF0800;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+          margin: 1rem;
+      }
+  
+      .note-delete-button:hover {
+          color: #FF0800;
+          background-color: white;
+      }
+    
+  
+  
+  }
+  
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Notes Section End                                  */
+  /* ************************************************************************* */
+  
+  
+  /* ************************************************************************* */
+  /*                          Collaborate section Start                                  */
+  /* ************************************************************************* */
+  
+  .Student-collaboration-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  }
+  
+  .student-collaboration-heading {
+      text-align: center;
+      padding: 3.3rem;
+  }
+  
+  .self-messege, .others-message {
+      max-width: 100%;
+      width: auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      background-color: #C0C0FF;
+      text-align: center;
+      padding: 0.5rem;
+      text-align: justify;
+  }
+  
+  .self-messege {
+      align-self: flex-end;
+      margin-left: auto;
+  }
+  
+  .others-message {
+      align-self: flex-start;
+      margin-right: auto;
+  }
+  
+  
+  .message-edit-button {
+      width: auto;
+      height: auto;
+      background-color: #FF5F15;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+  
+  }
+  
+  .message-edit-button:hover {
+      color: #FF5F15;
+      background-color: white;
+  }
+  
+  .message-delete-button {
+          width: auto;
+          height: auto;
+          background-color: #FF0800;
+          color: #fff;
+          border: 0.1rem solid grey;
+          border-radius: 0.1875rem;
+          cursor: pointer;
+          text-align: center;
+          display: inline-block;
+      }
+  
+  .message-delete-button:hover {
+          color: #FF0800;
+          background-color: white;
+      }
+  
+  .send-messege-input-box {
+      width: calc(95% - 100px);
+      padding: 0.5rem;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      margin-right: 0.5rem;
+  }
+  
+  .send-messege-button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.3125rem;
+      background-color: #4CBB17;
+      color: #fff;
+      cursor: pointer;
+  }
+  
+  .send-messege-button:hover {
+          color: #4CBB17;
+          background-color: white;
+      }
+  
+  /* ************************************************************************* */
+  /*                          Collaborate section End                                  */
+  /* ************************************************************************* */
+  
+  
+  /* ************************************************************************* */
+  /*                          Registration Section Start                       */
+  /* ************************************************************************* */
+  
+  .student-registration-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .student-registration-heading {
+      text-align: center;
+      padding: 3.3rem;
+  }
+  
+  .student-registration-form-heading {
+      text-align: center;
+  }
+  
+  .student-registration-form {
+      width: 50%;
+      height:auto;
+      margin: 3rem auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      background-color: #C0C0FF;
+  }
+  
+  .student-registration-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+  }
+  
+  .student-registration-form input[type="email"],
+  .student-registration-form input[type="password"],
+  .student-registration-form input[type="text"] {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid grey;
+      border-radius: 0.25rem;
+  }
+  
+  .registration-submit-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin-left:40%;
+  
+  }
+  
+  .registration-submit-button:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  .student-login-redirect {
+       text-align:center;
+  }
+  
+  /* ************************************************************************* */
+  /*                          Registration Section End                         */
+  /* ************************************************************************* */
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Login Section Start                              */
+  /* ************************************************************************* */
+  
+  .student-Login-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .student-Login-heading {
+      text-align: center;
+      padding: 3.3rem;
+  }
+  
+  .student-Login-form-heading {
+     text-align:center;
+  }
+  
+  .student-Login-form {
+      width: 50%;
+      height:auto;
+      margin: 3rem auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      background-color: #C0C0FF;
+  }
+  
+  .student-Login-form label {
+      display: block;
+      margin-bottom: 0.5rem;
+  }
+  
+  .student-Login-form input[type="email"],
+  .student-Login-form input[type="password"],
+  .student-Login-form input[type="text"] {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid grey;
+      border-radius: 0.25rem;
+  }
+  
+  .student-login-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin-left:40%;
+  
+  }
+  
+  .student-login-button:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  .student-register-redirect,
+  .student-forgot-redirect {
+    text-align:center;
+  }
+  
+  /* ************************************************************************* */
+  /*                          Login Section End                                */
+  /* ************************************************************************* */
+  
+  
+  /* ************************************************************************* */
+  /*                          Reset Password Section Start                     */
+  /* ************************************************************************* */
+  
+  
+  .student-Reset-password-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .student-Reset-password-heading {
+     text-align: center;
+     padding: 3.3rem;
+  }
+  
+  .student-Reset-password-heading {
+    text-align:center;
+  }
+  
+  .student-reset-password-form {
+      width: 50%;
+      height:auto;
+      margin: 3rem auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      background-color: #C0C0FF;
+  }
+  
+  
+  .student-reset-password-form label {
+       display: block;
+       margin-bottom: 0.5rem;
+  }
+  
+  .student-reset-password-form input[type="email"],
+  .student-reset-password-form input[type="password"],
+  .student-reset-password-form input[type="text"] {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid grey;
+      border-radius: 0.25rem;
+  }
+  
+  .student-reset-password-button {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin-left:30%;
+  
+  }
+  
+  .student-reset-password-button:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  .student-pwd-login-redirect {
+     text-align:center;
+  }
+  
+  /* ************************************************************************* */
+  /*                          Reset Password Section End                       */
+  /* ************************************************************************* */
+  
+  /* ************************************************************************* */
+  /*                          Games Section Start                             */
+  /* ************************************************************************* */
+  
+  .student-games-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .student-games-heading {
+      text-align: center;
+      padding: 3.3rem;
+  }
+  
+  .student-four-games {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1rem;
+  }
+  
+  .number-guessing-game-grid-1,
+  .word-guessing-game-grid-2,
+  .missing-character-guessing-game-grid-3,
+  .coin-toss-guessing-game-grid-4 {
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      background-color: #C0C0FF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+  }
+  
+  .number-guessing-game-img,
+  .word-guessing-game-img,
+  .missing-character-game-img,
+  .coin-toss-game-img {
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+  }
+  
+  .games-grid-button {
+      width: 100%;
+      padding: 0.625rem 0.9375rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      margin-top: auto;
+  }
+  
+  .games-grid-button:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Games Section End                                */
+  /* ************************************************************************* */
+  
+  /* ************************************************************************* */
+  /*                          Number Guessing Game Section Start               */
+  /* ************************************************************************* */
+  
+  .number-guessing-game-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .number-guessing-game-heading {
+    text-align: center;
+    padding: 3.3rem;
+  }
+  
+  .name-heading {
+      text-align:center;
+  }
+  
+  .student-number-guessing-game {
+      width: 50%;
+      height:auto;
+      margin: 3rem auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      background-color: #C0C0FF;
+  }
+  .num-gue-lab,
+  .number-list {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      text-align: center;
+  }
+  
+  
+  .number-guess-input {
+      width:100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid grey;
+      border-radius: 0.25rem;
+  }
+  
+  .submit-number {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin:1rem;
+      margin-left:30%;
+  }
+  
+  .submit-number:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Number Guessing Game Section End                 */
+  /* ************************************************************************* */
+  
+  
+  /* ************************************************************************* */
+  /*                          Word Guessing Game Section Start                 */
+  /* ************************************************************************* */
+  
+  .word-guessing-game-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+    
+  }
+  
+  .word-guessing-game-heading {
+      text-align: center;
+      padding: 3.3rem;
+  }
+  
+  .word-heading {
+      text-align:center;
+    
+  }
+  
+  
+  .student-word-guessing-game {
+      width: 50%;
+      height:auto;
+      margin: 3rem auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      background-color: #C0C0FF;
+  }
+  
+  .word-guess-label,
+  .word-list {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      text-align: center;
+  }
+  
+  .word-guess-input {
+      width:100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid grey;
+      border-radius: 0.25rem;
+  }
+  
+  .submit-word {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin:1rem;
+      margin-left:30%;
+  }
+  
+  .submit-word:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  /* ************************************************************************* */
+  /*                          Word Guessing Game Section End                 */
+  /* ************************************************************************* */
+  
+  
+  /* ************************************************************************* */
+  /*                          puzzle Word Guessing Game Section Start                 */
+  /* ************************************************************************* */
+  
+  .puzzle-word-guessing-game-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+    
+  }
+  
+  .puzzle-word-guessing-game-heading {
+      text-align: center;
+      padding: 3.3rem;
+  }
+  
+  .puzzle-word-heading {
+      text-align:center;
+    
+  }
+  
+  
+  .student-puzzle-word-guessing-game {
+      width: 50%;
+      height:auto;
+      margin: 3rem auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      background-color: #C0C0FF;
+  }
+  
+  .puzzle-word-guess-label,
+  .puzzle-word-display {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      text-align: center;
+  }
+  
+  .puzzle-word-guess-input {
+      width:100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid grey;
+      border-radius: 0.25rem;
+  }
+  
+  .puzzle-submit-word {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      background-color: #3F00FF;
+      color: #fff;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin:1rem;
+      margin-left:30%;
+  }
+  
+  .puzzle-submit-word:hover {
+      color: #6F00FF;
+      background-color: white;
+  }
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          puzzle Word Guessing Game Section End            */
+  /* ************************************************************************* */
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Head & Toss Guessing section Start.              */
+  /* ************************************************************************* */
+  
+  .head-or-tails-game-section {
+      background-color: #CCCCFF;
+      padding: 1.5rem;
+  }
+  
+  .head-or-tails-game-heading {
+      text-align: center;
+      padding: 3.3rem;
+  }
+  
+  .head-or-tails-game-content {
+      width: 50%;
+      max-width: 600px; 
+      margin: 3rem auto;
+      border: 0.063rem solid #1F51FF;
+      border-radius: 0.3125rem;
+      padding: 2rem;
+      background-color: #C0C0FF;
+      text-align: center; 
+  }
+  
+  .result p {
+      font-size: 1.2em;
+      margin: 20px 0;
+      text-align: center;
+  }
+  
+  .btn {
+      width: auto;
+      height: auto;
+      padding: 0.5rem 1rem;
+      border: 0.1rem solid grey;
+      border-radius: 0.1875rem;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin: 1rem;
+      font-size: 1em;
+      color: #fff;
+      background-color: #FF5F15;
+      transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+      color: #FF5F15;
+      background-color: white;
+  }
+  
+  .btn:nth-of-type(2) {
+      background-color: #4CBB17;
+  }
+  
+  .btn:nth-of-type(2):hover {
+      color: #4CBB17;
+      background-color: white;
+  }
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Head & Toss Guessing section End                 */
+  /* ************************************************************************* */
+  
+  
+  
+  
+  
+  
+  /* ************************************************************************* */
+  /*                          Footer Section Start                             */
+  /* ************************************************************************* */
+  
+  
+  .student-learn-daily-footer {
+      background-color:#9381FF;
+      border-top: 0.1rem solid #6a5acd;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 0;
+  }
+  
+  .footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+  }
+  
+  .student-learn-daily-footer > .footer-content > div {
+      display: inline-block;
+      margin: 0 2rem;
+      vertical-align: top;
+  }
+  
+  .contact, .support, .social-media {
+      margin: 0 1.5rem;
+  }
+  
+  .contact h6, .support h6, .social-media h6 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+  }
+  
+  .con-icons i, .sm-icons i {
+      margin: 0 1rem;
+      font-size: 2rem;
+  }
+  
+  .con-icons, .sm-icons {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+  }
+  
+  .copyrights {
+      font-size: 1.4rem;
+      color: white;
+      background-color:#9381FF;
+      text-align: center;
+      padding: 1rem;
+      margin: 0;
+  }
+  
+  
+  
+  
+  
+  /* ************************************************************************* */
+  /*                         Footer Section End                            */
+  /* ************************************************************************* */
+  
+  

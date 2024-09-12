@@ -1,0 +1,1144 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your page">
+    <title>StudentLearnDaily</title>
+    <link rel="stylesheet" href="{% static 'student_web_app_introduction.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Quiche+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <script defer src="script.js"></script> 
+</head>
+<body>
+<section class="Entire-page">
+  
+<!--   *****************************************************************    -->
+<!--                        Nav Bar section Start                           -->
+<!--   *****************************************************************    -->
+  
+    <nav class="student-nav-bar">
+        <div class="student-icon-logo">
+            <h1 class="SLD-Menu"><i class="fa-solid fa-bars fa-beat"></i>
+              <ul class="student-nav-links-dropdown-SLD-Menu">
+                    <li class="student-nav-links-li"><a href="#">Homework</a></li>
+                    <li class="student-nav-links-li"><a href="#student-assignments-id">Assignments</a></li>
+                    <li class="student-nav-links-li"><a href="#student-daily-plan-id">Daily</a></li>
+                    <li class="student-nav-links-li"><a href="#student-monthly-plan-id">Monthly</a></li>
+                    <li class="student-nav-links-li"><a href="#student-yearly-plan-id">Yearly</a></li>
+                    <li class="student-nav-links-li"><a href="#student-goal-id">Goals</a></li>
+                    <li class="student-nav-links-li"><a href="#student-notes-id">Notes</a></li>
+                    <li class="student-nav-links-li"><a href="#student-collaboration-id">Collaborate</a></li>
+                    <li class="student-nav-links-li"><a href="#student-games-section-id">Games</a></li>
+              </ul>
+              </h1>
+            <p><i class="fa-solid fa-graduation-cap study-logo"></i></p>
+            
+          
+            <h1 class="student-learn-daily-logo">Student Learn Daily</h1>
+        </div>
+        <ul class="student-nav-links">
+            <li class="student-nav-links-li"><a href="#">Homework</a></li>
+            <li class="student-nav-links-li"><a href="#student-assignments-id">Assignments</a></li>
+            <li class="student-nav-links-li"><a href="#student-daily-plan-id">Daily</a></li>
+            <li class="student-nav-links-li"><a href="#student-monthly-plan-id">Monthly</a></li>
+            <li class="student-nav-links-li"><a href="#student-yearly-plan-id">Yearly</a></li>
+            <li class="student-nav-links-li"><a href="#student-goal-id">Goals</a></li>
+            <li class="student-nav-links-li"><a href="#student-notes-id">Notes</a></li>
+            <li class="student-nav-links-li"><a href="#student-collaboration-id">Collaborate</a></li>
+            <li class="student-nav-links-li"><a href="#student-games-section-id">Games</a></li>
+        </ul>
+        <div class="dropdown-container">
+        <p class="dropdown-trigger">Menu</p>
+        <ul class="student-nav-links-dropdown">
+            <li class="student-nav-links-li"><a href="#">Homework</a></li>
+            <li class="student-nav-links-li"><a href="#student-assignments-id">Assignments</a></li>
+            <li class="student-nav-links-li"><a href="#student-daily-plan-id">Daily</a></li>
+            <li class="student-nav-links-li"><a href="#student-monthly-plan-id">Monthly</a></li>
+            <li class="student-nav-links-li"><a href="#student-yearly-plan-id">Yearly</a></li>
+            <li class="student-nav-links-li"><a href="#student-goal-id">Goals</a></li>
+            <li class="student-nav-links-li"><a href="#student-notes-id">Notes</a></li>
+            <li class="student-nav-links-li"><a href="#student-collaboration-id">Collaborate</a></li>
+            <li class="student-nav-links-li"><a href="#student-games-section-id">Games</a></li>
+        </ul>
+        </div>
+      
+      
+        <div class="student-reg-log-icon">
+              <h6><a href="#">Register</a></h6>
+              <h6><a href="#">Log in</a></h6>
+              <h5> Welcome <b><i>Student</i></b></h5>
+              <p><i class="fa-solid fa-user-graduate student-profile"></i></p>
+        </div>
+    </nav>
+  
+<!--   *****************************************************************    -->
+<!--                        Nav Bar section End                             -->
+<!--   *****************************************************************    -->
+    
+
+<!--   *****************************************************************    -->
+<!--                        Home work section Start                             -->
+<!--   *****************************************************************    -->
+
+<section class="Student-Homework-section">
+  <h2 class="home-work-heading">Home Work</h2>
+  <div class="add-hw-form">
+    
+    <form class="add-form">
+      <h3 class="ahw-H">Add Home Work</h3>
+  <div class="form-row">
+    <label for="sname" class="label">Subject Name:</label>
+    <input type="text" id="sname" name="sname" placeholder="Subject Name" class="text-input" required>
+  </div>
+  <div class="form-row">
+    <label for="tname" class="label">Topic Name:</label>
+    <input type="text" id="tname" name="tname" placeholder="Topic Name" class="text-input" required>
+  </div>
+  <input type="submit" value="Add Home Work" class="submit-button">
+</form>
+
+  </div>
+
+  <div class="list-of-home-work">
+    <h3 class="LHTH">List of Homework to Do Today</h3>
+    <table class="list-hw-table">
+      <tr>
+        <th>Subject</th>
+        <th>Topic</th>
+        <th>Mark as In Progress</th>
+        <th>Date Added</th>
+      </tr>
+      <tr>
+        <td>Maths <button type="button" class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td>Addition <button type="button" ><i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td><button type="submit" class="In-Progress-btn">In Progress</button></td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>English <button type="button"><i class="fa-solid fa-pen-to-square"></i></i></button></td>
+        <td>Grammar <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td><button type="submit" class="In-Progress-btn">In Progress</button></td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>Physics <button type="button"><i class="fa-solid fa-pen-to-square"></i></i></button></td>
+        <td>Quantum Mechanics <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td><button type="submit" class="In-Progress-btn">In Progress</button></td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>History <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td>Ancient Civilizations <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td><button type="submit" class="In-Progress-btn">In Progress</button></td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>Geography <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td>Maps <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td><button type="submit" class="In-Progress-btn">In Progress</button></td>
+        <td>31/08/2024</td>
+      </tr>
+  
+
+  
+  
+    </table>
+  </div>
+
+  <div class="homework-in-progress">
+    <h3 class="HIPH">Homework in Progress</h3>
+    <table class="home-work-in-progress-tb">
+      <tr>
+        <th>Subject</th>
+        <th>Topic</th>
+        <th>Mark as Completed</th>
+        <th>Date In Progress</th>
+      </tr>
+      <tr>
+        <td>Maths </td>
+        <td>Addition </td>
+        <td><button type="submit" class="Complete-btn">Completed</button></td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>English</td>
+        <td>Grammar</td>
+        <td><button type="submit" class="Complete-btn">Completed</button></td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>Physics</td>
+        <td>Quantum Mechanics</td>
+        <td><button type="submit" class="Complete-btn">Completed</button></td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>History</td>
+        <td>Ancient Civilizations</td>
+        <td><button type="submit" class="Complete-btn">Completed</button></td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>Geography</td>
+        <td>Maps</td>
+        <td><button type="submit" class="Complete-btn">Completed</button></td>
+        <td>31/08/2024</td>
+      </tr>
+      
+
+      
+      
+      
+    </table>
+  </div>
+
+  <div class="search-day-homework">
+    <h3 class="SCHDH"> Search Completed Homework by Date</h3>
+    <form class="SHD-form">
+      <label for="homework-date">Search Homework by Date:</label>
+      <input type="date" id="homework-date" name="homework-date" placeholder="Select a date" required>
+      <button type="submit" class="Search-btn">Search</button>
+    </form>
+    <h3 class="SCHDH">Completed Homework on 31/08/2024</h3>
+    <table class="particular-day-home-work-tb">
+            <tr>
+              <th>Subject</th>
+              <th>Topic</th>
+            </tr>
+            <tr>
+              <td>Maths </td>
+              <td>Addition </td>
+            </tr>
+            <tr> 
+              <td>English</td>
+              <td>Grammar</td>
+            </tr>
+            <tr>
+              <td>Physics</td>
+              <td>Quantum Mechanics</td>
+            </tr>
+
+      
+    </table>
+  </div>
+
+  <div class="completed-homework">
+    <h3 class="ACHH">All Completed Homework</h3>
+    <table class="ACH-tb">
+      <tr>
+        <th>Subject</th>
+        <th>Topic</th>
+        <th>Completion Date</th>
+      </tr>
+      <tr>
+        <td>Maths </td>
+        <td>Addition </td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>English</td>
+        <td>Grammar</td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>Physics</td>
+        <td>Quantum Mechanics</td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>History</td>
+        <td>Ancient Civilizations</td>
+        <td>31/08/2024</td>
+      </tr>
+      <tr>
+        <td>Geography</td>
+        <td>Maps</td>
+        <td>31/08/2024</td>
+      </tr>
+      
+    </table>
+  </div>
+</section>
+
+  
+<!--   *****************************************************************    -->
+<!--                        Home work section End                           -->
+<!--   *****************************************************************    -->
+  
+
+
+<!--   *****************************************************************    -->
+<!--                        Assignment section Start                        -->
+<!--   *****************************************************************    -->
+
+ <section id="student-assignments-id" class="Student-Assignment-section">
+          <h2 class="Assignment-heading">Assignment</h2>
+          <div class="add-assignment-form-div">
+              <form class="add-assignment-submit-form">
+                  <label for="Aname"> Add an assignment by including the subject name, topic, due date, and assignment description. </label><br>
+                  <input type="text" id="Aname" name="Aname" placeholder="Add subject name, topic, due date, and assignment description." class="Add-assignment-input-box" required><br>
+                  <input type="submit" value="Add Assignment" class="assignment-submit-button">
+              </form>
+          </div>
+   
+          <div class="assignment-to-do">
+               <h3 class="assignment-to-do-heading">Assignments to Do</h3>
+               <div>
+                   
+                 <p class="assignment-to-do-list-p">Math 2024-09-15 Solve equations and inequalities.</p>
+                 <button class="assignment-to-do-in-progress-btn">In Progress</button>
+
+<p class="assignment-to-do-list-p">Science 2024-09-20 Complete the lab report on chemical reactions.</p>
+         <button class="assignment-to-do-in-progress-btn">In Progress</button>
+
+<p class="assignment-to-do-list-p">History 2024-09-25 Write an essay on the causes of World War II. </p>
+    <button class="assignment-to-do-in-progress-btn">In Progress</button>
+
+<p class="assignment-to-do-list-p">English 2024-10-01 Analyze the themes in "Macbeth." </p>
+<button class="assignment-to-do-in-progress-btn">In Progress</button>
+
+<p class="assignment-to-do-list-p">Geography 2024-10-05 Prepare a presentation on the impacts of climate change. </p>
+<button class="assignment-to-do-in-progress-btn">In Progress</button>
+        
+               </div>
+          </div>  
+   
+   <div class="assignment-in-progress">
+               <h3 class="assignment-in-progress-heading">Assignments In Progress</h3>
+               <div>
+                   
+                 <p class="assignment-in-progress-list-p">Math 2024-09-15 Solve equations and inequalities.</p>
+                 <button class="assignment-complete-btn">Completed</button>
+
+<p class="assignment-in-progress-list-p">Science 2024-09-20 Complete the lab report on chemical reactions.</p>
+         <button class="assignment-complete-btn">Completed</button>
+
+<p class="assignment-in-progress-list-p">History 2024-09-25 Write an essay on the causes of World War II. </p>
+    <button class="assignment-complete-btn">Completed</button>
+
+<p class="assignment-in-progress-list-p">English 2024-10-01 Analyze the themes in "Macbeth." </p>
+<button class="assignment-complete-btn">Completed</button>
+
+<p class="assignment-in-progress-list-p">Geography 2024-10-05 Prepare a presentation on the impacts of climate change. </p>
+<button class="assignment-complete-btn">Completed</button>
+   
+               </div>
+          </div>  
+   
+   
+   <div class="assignments-all-completed">
+               <h3 class="assignments-all-completed-heading">All Completed Assignments</h3>
+               <div>
+                   
+                 <p class="assignment-completed-list-p"> Completed on 2024-09-15 - Math  Solve equations and inequalities.</p>
+                 
+
+<p class="assignment-completed-list-p"> Completed on 2024-09-20 -  Science  Complete the lab report on chemical reactions.</p>
+         
+
+<p class="assignment-completed-list-p"> Completed on 2024-09-25 -  History  Write an essay on the causes of World War II. </p>
+   
+                 
+                 
+               </div>
+          </div>  
+   
+   
+ </section>
+
+<!--   *****************************************************************    -->
+<!--                        Assignment section End                          -->
+<!--   *****************************************************************    -->
+
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Daily section start                             -->
+<!--   *****************************************************************    -->
+
+ <section id="student-daily-plan-id" class="Student-daily-plan-section">
+    <h2 class="student-daily-heading">Daily Plans</h2>
+   
+    <div class="add-daily-plan-form">
+        <h3 class="student-daily-plan"></h3>
+        <form class="add-daily-plan-submit-form">
+            <label for="Adname">Add daily Plan</label><br>
+            <input type="text" id="Adname" name="Adname" placeholder="Enter your daily plan here." class="Add-daily-plan-input-box" required><br>
+            <input type="submit" value="Add Daily Plan" class="add-daily-plan-button">
+        </form>
+    </div>
+   
+    <div class="daily-plans-to-do">
+        <h3 class="daily-plans-to-do-heading">Plans to Do on 04-09-2024</h3>
+        <div>
+            <p class="daily-plans-to-do-list-p">Study for the Math test on 2024-09-04.</p>
+            <button class="daily-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="daily-plans-to-do-list-p">Complete coding practice exercises by 2024-09-04.</p>
+            <button class="daily-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="daily-plans-to-do-list-p">Read chapters 5 and 6 of the history textbook by 2024-09-04.</p>
+            <button class="daily-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="daily-plans-to-do-list-p">Analyze key themes in "Macbeth" by 2024-09-04.</p>
+            <button class="daily-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="daily-plans-to-do-list-p">Prepare notes on the impacts of climate change by 2024-09-04.</p>
+            <button class="daily-plans-to-do-in-progress-btn">In Progress</button>
+          
+    
+          
+        </div>
+    </div>
+   
+    <div class="daily-plan-in-progress">
+        <h3 class="daily-plan-in-progress-heading">Daily Plans In Progress</h3>
+        <div>
+            <p class="daily-plan-in-progress-list-p">Study for the Math test on 2024-09-04.</p>
+            <button class="daily-plan-complete-btn">Completed</button>
+
+            <p class="daily-plan-in-progress-list-p">Complete coding practice exercises by 2024-09-04.</p>
+            <button class="daily-plan-complete-btn">Completed</button>
+
+            <p class="daily-plan-in-progress-list-p">Read chapters 5 and 6 of the history textbook by 2024-09-04.</p>
+            <button class="daily-plan-complete-btn">Completed</button>
+
+            <p class="daily-plan-in-progress-list-p">Analyze key themes in "Macbeth" by 2024-09-04.</p>
+            <button class="daily-plan-complete-btn">Completed</button>
+
+            <p class="daily-plan-in-progress-list-p">Prepare notes on the impacts of climate change by 2024-09-04.</p>
+            <button class="daily-plan-complete-btn">Completed</button>
+          
+      
+        </div>
+    </div>
+   
+    <div class="daily-plans-all-completed">
+        <h3 class="assignments-all-completed-heading">Completed Daily Plans</h3>
+        <div>
+            <p class="daily-plans-completed-list-p">Completed on 2024-09-15 - Study for the Math test.</p>
+            <p class="daily-plans-completed-list-p">Completed on 2024-09-15 - Complete coding practice exercises.</p>
+            <p class="daily-plans-completed-list-p">Completed on 2024-09-15 - Read chapters 5 and 6 of the history textbook.</p>
+           
+          
+        </div>
+    </div>
+</section>
+
+   
+
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Daily section End                               -->
+<!--   *****************************************************************    -->
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Monthly section Start                               -->
+<!--   *****************************************************************    -->
+
+
+<section id="student-monthly-plan-id" class="Student-monthly-plan-section">
+    <h2 class="student-monthly-heading">Monthly Plans</h2>
+   
+    <div class="add-monthly-plan-form">
+        <h3 class="student-monthly-plan"></h3>
+        <form class="add-monthly-plan-submit-form">
+            <label for="Adname">Add Monthly Plan</label><br>
+            <input type="text" id="Adname" name="Adname" placeholder="Enter your monthly plan here." class="Add-monthly-plan-input-box" required><br>
+            <input type="submit" value="Add Monthly Plan" class="add-monthly-plan-button">
+        </form>
+    </div>
+   
+    <div class="monthly-plans-to-do">
+        <h3 class="monthly-plans-to-do-heading">Plans to Do in September 2024</h3>
+        <div>
+            <p class="monthly-plans-to-do-list-p">Study for the Math test in September.</p>
+            <button class="monthly-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="monthly-plans-to-do-list-p">Complete coding practice exercises by September.</p>
+            <button class="monthly-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="monthly-plans-to-do-list-p">Read chapters 5 and 6 of the history textbook by September.</p>
+            <button class="monthly-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="monthly-plans-to-do-list-p">Analyze key themes in "Macbeth" by September.</p>
+            <button class="monthly-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="monthly-plans-to-do-list-p">Prepare notes on the impacts of climate change by September.</p>
+            <button class="monthly-plans-to-do-in-progress-btn">In Progress</button>
+
+        </div>
+    </div>
+   
+    <div class="monthly-plan-in-progress">
+        <h3 class="monthly-plan-in-progress-heading">Monthly Plans In Progress</h3>
+        <div>
+            <p class="monthly-plan-in-progress-list-p">Study for the Math test in September.</p>
+            <button class="monthly-plan-complete-btn">Completed</button>
+
+            <p class="monthly-plan-in-progress-list-p">Complete coding practice exercises by September.</p>
+            <button class="monthly-plan-complete-btn">Completed</button>
+
+            <p class="monthly-plan-in-progress-list-p">Read chapters 5 and 6 of the history textbook by September.</p>
+            <button class="monthly-plan-complete-btn">Completed</button>
+
+            <p class="monthly-plan-in-progress-list-p">Analyze key themes in "Macbeth" by September.</p>
+            <button class="monthly-plan-complete-btn">Completed</button>
+
+            <p class="monthly-plan-in-progress-list-p">Prepare notes on the impacts of climate change by September.</p>
+            <button class="monthly-plan-complete-btn">Completed</button>
+
+        </div>
+    </div>
+   
+    <div class="monthly-plans-all-completed">
+        <h3 class="assignments-all-completed-heading">Completed Monthly Plans</h3>
+        <div>
+            <p class="monthly-plans-completed-list-p">Completed in September - Study for the Math test.</p>
+            <p class="monthly-plans-completed-list-p">Completed in September - Complete coding practice exercises.</p>
+            <p class="monthly-plans-completed-list-p">Completed in September - Read chapters 5 and 6 of the history textbook.</p>
+          
+          
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Monthly section End                             -->
+<!--   *****************************************************************    -->
+
+
+<!--   *****************************************************************    -->
+<!--                        Yearly section Start                             -->
+<!--   *****************************************************************    -->
+
+
+<section id="student-yearly-plan-id" class="Student-yearly-plan-section">
+    <h2 class="student-yearly-heading">Yearly Plans</h2>
+   
+    <div class="add-yearly-plan-form">
+        <h3 class="student-yearly-plan"></h3>
+        <form class="add-yearly-plan-submit-form">
+            <label for="Adname">Add Yearly Plan</label><br>
+            <input type="text" id="Adname" name="Adname" placeholder="Enter your yearly plan here." class="Add-yearly-plan-input-box" required><br>
+            <input type="submit" value="Add Yearly Plan" class="add-yearly-plan-button">
+        </form>
+    </div>
+   
+    <div class="yearly-plans-to-do">
+        <h3 class="yearly-plans-to-do-heading">Plans to Do in 2024</h3>
+        <div>
+            <p class="yearly-plans-to-do-list-p">Attend the annual science fair in 2024.</p>
+            <button class="yearly-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="yearly-plans-to-do-list-p">Finish the research paper on renewable energy by 2024.</p>
+            <button class="yearly-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="yearly-plans-to-do-list-p">Complete the summer internship at the tech company by 2024.</p>
+            <button class="yearly-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="yearly-plans-to-do-list-p">Submit the application for the leadership conference by 2024.</p>
+            <button class="yearly-plans-to-do-in-progress-btn">In Progress</button>
+
+            <p class="yearly-plans-to-do-list-p">Organize a charity event by the end of 2024.</p>
+            <button class="yearly-plans-to-do-in-progress-btn">In Progress</button>
+
+        </div>
+    </div>
+   
+    <div class="yearly-plan-in-progress">
+        <h3 class="yearly-plan-in-progress-heading">Yearly Plans In Progress</h3>
+        <div>
+            <p class="yearly-plan-in-progress-list-p">Attend the annual science fair in 2024.</p>
+            <button class="yearly-plan-complete-btn">Completed</button>
+
+            <p class="yearly-plan-in-progress-list-p">Finish the research paper on renewable energy by 2024.</p>
+            <button class="yearly-plan-complete-btn">Completed</button>
+
+            <p class="yearly-plan-in-progress-list-p">Complete the summer internship at the tech company by 2024.</p>
+            <button class="yearly-plan-complete-btn">Completed</button>
+
+            <p class="yearly-plan-in-progress-list-p">Submit the application for the leadership conference by 2024.</p>
+            <button class="yearly-plan-complete-btn">Completed</button>
+
+            <p class="yearly-plan-in-progress-list-p">Organize a charity event by the end of 2024.</p>
+            <button class="yearly-plan-complete-btn">Completed</button>
+
+        </div>
+    </div>
+   
+    <div class="yearly-plans-all-completed">
+        <h3 class="assignments-all-completed-heading">Completed Yearly Plans</h3>
+        <div>
+            <p class="yearly-plans-completed-list-p">Completed in 2024 - Attended the annual science fair.</p>
+            <p class="yearly-plans-completed-list-p">Completed in 2024 - Finished the research paper on renewable energy.</p>
+            <p class="yearly-plans-completed-list-p">Completed in 2024 - Completed the summer internship at the tech company.</p>
+          
+
+          
+        </div>
+    </div>
+</section>
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Yearly section End                              -->
+<!--   *****************************************************************    -->
+
+
+<!--   *****************************************************************    -->
+<!--                        Goals section Start                              -->
+<!--   *****************************************************************    -->
+
+
+<section id="student-goal-id" class="Student-goal-section">
+    <h2 class="student-goal-heading">Goals</h2>
+    <div class="goals-add-form">
+        <form>
+            <label for="gname">Goal</label><br>
+            <input type="text" id="gname" name="gname" class="add-goal-input-box" placeholder="Add your goals" required><br>
+            <div><input type="submit" value="Add Goal" class="add-goal-button"></div>
+        </form>
+    </div>
+
+    <div class="student-goals--two-divs">
+        <div class="student-added-goals">
+            <h3>Added Goals</h3>
+            <div class="student-added-goals-edit">
+                <p>Develop strong time management skills to balance academic, extracurricular, and personal responsibilities effectively.</p>
+                <button type="button" class="gaol-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" class="goal-complete-button">Completed  <i class="fa-solid fa-square-check"></i></button>
+                <button type="button" class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+            </div>
+
+            <div class="student-added-goals-edit">
+                <p>Improve critical thinking and problem-solving abilities through active participation in class discussions and assignments.</p>
+                <button type="button" class="gaol-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" class="goal-complete-button">Completed <i class="fa-solid fa-square-check"></i></button>
+                <button type="button" class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+            </div>
+
+            <div class="student-added-goals-edit">
+                <p>Enhance communication skills by engaging in public speaking opportunities and collaborative projects.</p>
+                <button type="button" class="gaol-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" class="goal-complete-button">Completed <i class="fa-solid fa-square-check"></i></button>
+                <button type="button" class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+            </div>
+
+            <div class="student-added-goals-edit">
+                <p>Set and achieve personal and academic milestones by creating realistic, measurable, and time-bound goals.</p>
+                <button type="button" class="gaol-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" class="goal-complete-button">Completed <i class="fa-solid fa-square-check"></i></button>
+                <button type="button" class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+            </div>
+
+            <div class="student-added-goals-edit">
+                <p>Foster a growth mindset by embracing challenges and learning from setbacks and failures.</p>
+                <button type="button" class="gaol-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" class="goal-complete-button" >Completed <i class="fa-solid fa-square-check"></i></button>
+                <button type="button" class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+            </div>
+          
+
+          
+        </div>
+
+        <div class="student-completed-goals">
+            <h3>Completed Goals</h3>
+
+            <div class="student-completed-goals-edit">
+                <p>Develop strong time management skills to balance academic, extracurricular, and personal responsibilities effectively.</p>
+                <button type="button" class="gaol-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" class="goal-complete-button">To Do <i class="fa-solid fa-rotate-left"></i></button>
+                <button type="button" class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+            </div>
+
+            <div class="student-completed-goals-edit">
+                <p>Enhance your ability to work in teams by participating in group projects and collaborative activities.</p>
+                <button type="button" class="gaol-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i> </button>
+                <button type="button" class="goal-complete-button">To Do <i class="fa-solid fa-rotate-left"></i></button>
+                <button type="button" class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+            </div>
+
+            <div class="student-completed-goals-edit">
+                <p>Improve your organizational skills by creating and adhering to a structured daily and weekly schedule.</p>
+                <button type="button" class="gaol-edit-button">Edit  <i class="fa-solid fa-pen-to-square"></i> </button>
+                <button type="button" class="goal-complete-button">To Do <i class="fa-solid fa-rotate-left"></i></button>
+                <button type="button" class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+            </div>
+
+            <div class="student-completed-goals-edit">
+                <p>Increase your knowledge in your field of study by attending relevant workshops, seminars, and conferences.</p>
+                <button type="button" class="gaol-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" class="goal-complete-button">To Do <i class="fa-solid fa-rotate-left"></i></i></button>
+                <button type="button" class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+            </div>
+
+            <div class="student-completed-goals-edit">
+                <p>Develop resilience by setting challenging goals and learning to overcome obstacles through persistence and adaptability.</p>
+                <button type="button" class="gaol-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" class="goal-complete-button">To Do <i class="fa-solid fa-rotate-left"></i></button>
+                <button type="button" class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+            </div>
+      
+
+      
+        </div>
+    </div>
+</section>
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Goals section End                              -->
+<!--   *****************************************************************    -->
+
+
+<!--   *****************************************************************    -->
+<!--                        Notes section start                              -->
+<!--   *****************************************************************    -->
+
+<section id="student-notes-id" class="Student-notes-section">
+    <h2 class="student-notes-heading">Notes</h2>
+    <div class="student-notes-form">
+        <form>
+            <label for="noname">Note</label><br>
+            <input type="text" id="noname" name="noname" class="add-notes-input-box" placeholder="Add your notes" required><br>
+            <div><input type="submit" value="Add note" class="add-note-button"></div>
+        </form>
+    </div>
+    <div class="student-added-notes">
+        <h3>Added Notes</h3>
+        <div class="student-added-note-edit">
+            <p>Reflect on daily experiences to better understand personal growth and development.</p>
+            <button type="button" class="note-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+            <button type="button" class="note-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+        </div>
+
+        <div class="student-added-note-edit">
+            <p>Identify areas for improvement and set actionable steps to enhance skills and knowledge.</p>
+            <button type="button" class="note-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+            <button type="button" class="note-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+        </div>
+
+        <div class="student-added-note-edit">
+            <p>Seek feedback from peers and mentors to gain different perspectives and improve performance.</p>
+            <button type="button" class="note-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+            <button type="button" class="note-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+        </div>
+
+        <div class="student-added-note-edit">
+            <p>Document and track progress regularly to stay motivated and make necessary adjustments.</p>
+            <button type="button" class="note-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+            <button type="button" class="note-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+        </div>
+
+        <div class="student-added-note-edit">
+            <p>Maintain a positive mindset and embrace new opportunities for learning and growth.</p>
+            <button type="button" class="note-edit-button">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+            <button type="button" class="note-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+        </div>
+   
+    </div>
+</section>
+
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Notes section End                              -->
+<!--   *****************************************************************    -->
+
+
+<!--   *****************************************************************    -->
+<!--                        Collaboration section Start                              -->
+<!--   *****************************************************************    -->
+
+
+<section id="student-collaboration-id" class="Student-collaboration-section">
+    <h2 class="student-collaboration-heading">Collaboration</h2>
+
+    <div class="self-messege">
+         <h5> You - 04:21 PM 07-Sep-2024</h5>
+         <p>Hi all...</p>
+         <p> <button type="button" class="message-edit-button"><i class="fa-solid fa-pen-to-square"></i>  </button> <button type="button" class="message-delete-button"><i class="fa-solid fa-trash"></i></button></p>
+    </div> 
+
+   <div class="others-message">
+        <h5> Abc - 04:21 PM 07-Sep-2024</h5>
+         <p>Hello all</p>
+   </div>
+   
+    <div class="others-message">
+        <h5> Def - 04:22 PM 07-Sep-2024</h5>
+         <p>Hello all, how are you? </p>
+   </div>
+  
+   <div class="others-message">
+        <h5> Fgh - 04:23 PM 07-Sep-2024</h5>
+         <p>I am fine. What about the others?</p>
+   </div>
+  
+   <div class="self-messege">
+         <h5> You - 04:24 PM 07-Sep-2024</h5>
+         <p>I am fine. Have you completed the math homework?</p>
+         <p> <button type="button" class="message-edit-button"><i class="fa-solid fa-pen-to-square"></i></button> <button type="button" class="message-delete-button"><i class="fa-solid fa-trash"></i></button></p>
+    </div> 
+    
+    <div class="others-message">
+        <h5> Abc - 04:24 PM 07-Sep-2024</h5>
+         <p>Yes, completed.</p>
+   </div>
+   
+    <div class="others-message">
+        <h5> Def - 04:25 PM 07-Sep-2024</h5>
+         <p>No, I will do it. </p>
+   </div>
+  
+   <div class="others-message">
+        <h5> Fgh - 04:26 PM 07-Sep-2024</h5>
+         <p>In progress.</p>
+   </div>
+    
+  <div class="self-messege">
+         <h5> You - 04:27 PM 07-Sep-2024</h5>
+         <p>Ok, bye... see you soon.</p>
+         <p> <button type="button" class="message-edit-button"><i class="fa-solid fa-pen-to-square"></i> </button> <button type="button" class="message-delete-button"><i class="fa-solid fa-trash"></i></button></p>
+    </div> 
+
+   <form id="message-form">
+    <input type="text" id="mename" name="mename" class="send-messege-input-box" placeholder="Send a message" required>
+    <button type="submit" class="send-messege-button">
+    <i class="fa-solid fa-paper-plane"></i> Send
+</button>
+
+</form>
+  
+</section>
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Collaboration section End                       -->
+<!--   *****************************************************************    -->
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Register section Start                          -->
+<!--   *****************************************************************    -->
+
+<section class="student-registration-section">
+    <h2 class="student-registration-heading">Registration</h2>
+   <div class="student-registration-form">
+    <form>
+        <h3 class="student-registration-form-heading">Register from here</h3>
+        <label for="fname">First Name:</label>
+<input type="text" id="fname" class="registration-fname" placeholder="First Name" required>
+
+       <label for="lname">Last Name:</label>
+<input type="text" id="lname" class="registration-lname" placeholder="Last Name" required>
+
+      
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" class="registration-email-input" placeholder="Email Id" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="registration-password-input" placeholder="Password" required>
+        
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" class="registration-confirm-password-input" placeholder="Confirm Password" required>
+        
+        <label for="otp">OTP:</label>
+        <input type="text" id="otp" class="registration-otp" placeholder="Registration OTP" required>
+        
+        <input type="submit" value="Register" class="registration-submit-button">
+    </form>
+     <p class="student-login-redirect">Already have an account? <a href="#">Log in</a> </p>
+     </div>
+</section>
+
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Register section End                            -->
+<!--   *****************************************************************    -->
+
+<!--   *****************************************************************    -->
+<!--                        Login section Start                               -->
+<!--   *****************************************************************    -->
+
+<section class="student-Login-section">
+    <h2 class="student-Login-heading">Login</h2>
+    <div class="student-Login-form">
+        <form>
+            <h3 class="student-Login-form-heading">Login Here</h3>
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" class="student-login-email" placeholder="Registered email ID" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="student-login-password" placeholder="Password" required>
+            
+            <label for="otp">OTP:</label>
+            <input type="text" id="otp" class="student-login-otp" placeholder="OTP" required>
+            
+            <input type="submit" value="Login" class="student-login-button">
+        </form>
+        <p class="student-register-redirect">Don't have an account? <a href="#">Register</a></p>
+        <p  class="student-forgot-redirect">Forgot your password? <a href="#">Reset it here</a></p>
+    </div>
+</section>
+
+
+<!--   *****************************************************************    -->
+<!--                        Login section End                               -->
+<!--   *****************************************************************    -->
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Reset Password section Start                    -->
+<!--   *****************************************************************    -->
+
+<section class="student-Reset-password-section">
+    <h2 class="student-Reset-password-heading">Reset Password</h2>
+    <div class="student-reset-password-form">
+        <form>
+            <h3 class="student-Reset-password-heading">Reset Your Password</h3>
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" class="student-registered-email-input" placeholder="Registered Email ID" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="student-reset-password-input" placeholder="Password" required>
+            
+            <label for="confirmpassword">Confirm Password:</label>
+            <input type="password" id="confirmpassword" class="student-reset-confirm-password-input" placeholder="Confirm Password" required>
+            
+            <label for="otp">OTP:</label>
+            <input type="text" id="otp" class="student-reset-password-otp-input" placeholder="OTP" required>
+            
+            <input type="submit" value="Reset Password" class="student-reset-password-button">
+        </form>
+        <p class="student-pwd-login-redirect">Password reset? <a href="#">Login</a></p>
+    </div>
+</section>
+
+
+<!--   *****************************************************************    -->
+<!--                        Reset Password section End                      -->
+<!--   *****************************************************************    -->
+
+<!--   *****************************************************************    -->
+<!--                        Games section Start                            -->
+<!--   *****************************************************************    -->
+
+<section id="student-games-section-id" class="student-games-section">
+     <h2 class="student-games-heading">Games</h2>
+     <div class="student-four-games">
+     <div class="number-guessing-game-grid-1">
+          <img src="https://easyshiksha.com/online_courses/assets/games/number-guessing/images/banner.png" alt="Number Guessing Game" class="number-guessing-game-img">
+          <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
+     </div>
+      
+     <div class="word-guessing-game-grid-2">
+          <img src="https://play-lh.googleusercontent.com/Iu9G897Sm7qYZdQNlF8Sfo2w555o2Ekr9MwpIfj7iG_0zG5CF9HHAnfRKBK0Lx9rECE" alt="word Guessing Game" class="word-guessing-game-img">
+          <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
+     </div>
+       
+       <div class="missing-character-guessing-game-grid-3">
+          <img src="https://i.ytimg.com/vi/sdD0LcGgh-A/maxresdefault.jpg" class="missing-character-game-img">
+          <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
+     </div>
+        <div class="coin-toss-guessing-game-grid-4">
+          <img src="https://flipsimu.com/static/coin-image-big-b4e8096a3ec8ecc2b96d5998f19bda6c.png" class="coin-toss-game-img">
+          <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
+     </div>
+       
+       
+    </div>
+  
+</section>
+
+<!--   *****************************************************************    -->
+<!--                        Games section End                               -->
+<!--   *****************************************************************    -->
+
+
+<!--   *****************************************************************    -->
+<!--                        Number Guessing section start                   -->
+<!--   *****************************************************************    -->
+
+<section class="number-guessing-game-section">
+    <h2 class="number-guessing-game-heading">Guess the Number</h2>
+    <div class="student-number-guessing-game">
+    <h3 class="name-heading">Hello, Abc! Guess the Number from below</h3>
+    <p class="number-list"><b>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</b></p>
+    <form>
+        <label for="number-game" class="num-gue-lab"><b>Number:</b></label>
+        <input type="number" id="number-game" placeholder="Enter your guess" class="number-guess-input" required>
+        <input type="submit" class="submit-number" value="Submit">
+    </form>
+    </div>
+</section>
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Number Guessing section End                     -->
+<!--   *****************************************************************    -->
+
+<!--   *****************************************************************    -->
+<!--                        Word Guessing section start                   -->
+<!--   *****************************************************************    -->
+
+<section class="word-guessing-game-section">
+    <h2 class="word-guessing-game-heading">Guess the Word</h2>
+    <div class="student-word-guessing-game">
+        <h3 class="word-heading">Hello, Abc! Guess the Word from below</h3>
+        <p class="word-list"><b>[Apple, Banana, Cake, Door, Elephant, Flower, Guitar, House, Ice Cream, Kite]</b></p>
+
+        <form>
+            <label for="word-game" class="word-guess-label"><b>Word:</b></label>
+            <input type="text" id="word-game" placeholder="Enter your guess" class="word-guess-input" required>
+            <input type="submit" class="submit-word" value="Submit">
+        </form>
+    </div>
+</section>
+
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Word Guessing section End                     -->
+<!--   *****************************************************************    -->
+
+
+<!--   *****************************************************************    -->
+<!--                        Puzzle Word Guessing section start                     -->
+<!--   *****************************************************************    -->
+
+<section class="puzzle-word-guessing-game-section">
+    <h2 class="puzzle-word-guessing-game-heading">Guess the Puzzle Word</h2>
+    <div class="student-puzzle-word-guessing-game">
+        <h3 class="puzzle-word-heading">Hello, Abc! Guess the word from the puzzle below:</h3>
+        <p class="puzzle-word-display"><b>[A_p_e]</b></p>
+
+        <form>
+            <label for="puzzle-word-game" class="puzzle-word-guess-label"><b>Word:</b></label>
+            <input type="text" id="puzzle-word-game" placeholder="Enter your guess" class="puzzle-word-guess-input" required>
+            <input type="submit" class="puzzle-submit-word" value="Submit">
+        </form>
+    </div>
+</section>
+
+
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Puzzle Guessing section End                     -->
+<!--   *****************************************************************    -->
+
+<!--   *****************************************************************    -->
+<!--                        Head & Toss Guessing section Start.             -->
+<!--   *****************************************************************    -->
+
+<section class="head-or-tails-game-section">
+        <h2 class="head-or-tails-game-heading">Head or Tails Game</h2>
+        <div class="head-or-tails-game-content">
+            <div class="result">
+                <p id="outcome">Make your choice!</p>
+            </div>
+            <button class="btn" onclick="tossCoin('heads')">Heads</button>
+            <button class="btn" onclick="tossCoin('tails')">Tails</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+
+<!--   *****************************************************************    -->
+<!--                        Head & Toss Guessing section End                -->
+<!--   *****************************************************************    -->
+
+
+
+<!--   *****************************************************************    -->
+<!--                        Footer section Start                            -->
+<!--   *****************************************************************    -->
+  
+<footer class="student-learn-daily-footer">
+    
+  
+    <div class="footer-content">
+        <div class="contact">
+            <h6><u>Contact Us</u></h6>
+            <div class="con-icons">
+                <i class="fa-solid fa-mobile-button"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+        <div class="support">
+            <h6><u>Support</u></h6>
+            <p>FAQ</p>
+            <p>Help Center</p>
+        </div>
+        <div class="social-media">
+            <h6><u>Social Media</u></h6>
+            <div class="sm-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+  <p class="copyrights">&copy; 2024 - <span id="current-year"></span> Student Learn Daily. All rights reserved. Made with love <i class="fa-solid fa-heart"></i> Chiluru Santhosh Kumar Raju.</p>
+
+
+
+
+
+  
+<!--   *****************************************************************    -->
+<!--                      Footer section End                                -->
+<!--   *****************************************************************    -->
+ 
+</section>
+
+<script>
+  var currentYear = new Date().getFullYear();
+  document.getElementById('current-year').textContent = currentYear;
+  
+  
+function tossCoin(choice) {
+    const result = Math.random() < 0.5 ? 'heads' : 'tails';
+    const outcomeElement = document.getElementById('outcome');
+    
+    if (choice === result) {
+        outcomeElement.textContent = `You guessed ${choice} and it was ${result}! You win!`;
+    } else {
+        outcomeElement.textContent = `You guessed ${choice} but it was ${result}. Try again!`;
+    }
+}
+</script>
+
+
+</body>
+</html>
