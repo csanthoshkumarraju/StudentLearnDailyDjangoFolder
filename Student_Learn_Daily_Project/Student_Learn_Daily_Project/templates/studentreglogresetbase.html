@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Learn Daily</title>
+  {% comment %} <link rel="stylesheet" href="{% static 'student_web_app_introduction.css' %}"> {% endcomment %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" type="image/jpeg" href="{% static 'StudentLearnDailyfav.jpg' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Quiche+Sans:wght@400;700&display=swap" rel="stylesheet">
+  {% block css %}
+ 
+
+  {% endblock css%}
+  
+<!-- Link Bootstrap CSS -->
+<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+
+<body style = "margin:0">
+    {% include "studentregloginresetnav.html" %}
+    
+    {% block content %}
+    
+
+    {% endblock %}
+    
+    {% include "studentlearndailyfooter.html" %}
+
+
+
+</body>
+</html>

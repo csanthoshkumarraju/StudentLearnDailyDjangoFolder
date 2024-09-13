@@ -4754,7 +4754,7 @@ body {
   .missing-character-game-img,
   .coin-toss-game-img {
       width: 100%;
-      height: 60%;
+      height: 80%;
       object-fit: cover;
   }
   

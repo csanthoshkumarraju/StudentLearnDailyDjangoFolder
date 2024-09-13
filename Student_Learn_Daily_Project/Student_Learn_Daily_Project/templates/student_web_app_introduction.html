@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A brief description of your page">
-    <title>StudentLearnDaily</title>
+    <title>Student Learn Daily</title>
     <link rel="stylesheet" href="{% static 'student_web_app_introduction.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" type="image/jpeg" href="{% static 'StudentLearnDailyfav.jpg' %}">
   <link href="https://fonts.googleapis.com/css2?family=Quiche+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-    <script defer src="script.js"></script> 
+    
 </head>
 <body>
 <section class="Entire-page">
@@ -69,7 +69,7 @@
       
       
         <div class="student-reg-log-icon">
-              <h6><a href="#">Register</a></h6>
+              <h6><a href="{% url "Student_Register" %}">Register</a></h6>
               <h6><a href="#">Log in</a></h6>
               <h5> Welcome <b><i>Student</i></b></h5>
               <p><i class="fa-solid fa-user-graduate student-profile"></i></p>
@@ -951,21 +951,21 @@
      <h2 class="student-games-heading">Games</h2>
      <div class="student-four-games">
      <div class="number-guessing-game-grid-1">
-          <img src="https://easyshiksha.com/online_courses/assets/games/number-guessing/images/banner.png" alt="Number Guessing Game" class="number-guessing-game-img">
+          <img src="/static/Leonardo_Phoenix_Gradient_background_light_gray_to_pastel_blue_2.jpg" alt="Number Guessing Game" class="number-guessing-game-img">
           <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
      </div>
       
      <div class="word-guessing-game-grid-2">
-          <img src="https://play-lh.googleusercontent.com/Iu9G897Sm7qYZdQNlF8Sfo2w555o2Ekr9MwpIfj7iG_0zG5CF9HHAnfRKBK0Lx9rECE" alt="word Guessing Game" class="word-guessing-game-img">
+          <img src="/static/Leonardo_Phoenix_Gradient_background_light_gray_to_pastel_blue_3.jpg" alt="word Guessing Game" class="word-guessing-game-img">
           <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
      </div>
        
        <div class="missing-character-guessing-game-grid-3">
-          <img src="https://i.ytimg.com/vi/sdD0LcGgh-A/maxresdefault.jpg" class="missing-character-game-img">
+          <img src="/static/Leonardo_Phoenix_Gradient_background_light_gray_to_pastel_blue_2 (1).jpg" class="missing-character-game-img">
           <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
      </div>
         <div class="coin-toss-guessing-game-grid-4">
-          <img src="https://flipsimu.com/static/coin-image-big-b4e8096a3ec8ecc2b96d5998f19bda6c.png" class="coin-toss-game-img">
+          <img src="/static/Leonardo_Phoenix_Gradient_background_light_gray_to_pastel_blue_0.jpg" class="coin-toss-game-img">
           <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
      </div>
        
@@ -1068,7 +1068,7 @@
             <button class="btn" onclick="tossCoin('tails')">Tails</button>
         </div>
     </section>
-    <script src="script.js"></script>
+    
 
 
 <!--   *****************************************************************    -->

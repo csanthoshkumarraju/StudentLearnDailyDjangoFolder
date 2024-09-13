@@ -1,0 +1,43 @@
+{% extends "studentreglogresetbase.html" %}
+
+{% load static %}
+{% block css %}
+    <!-- Link to home-specific CSS -->
+    <link rel="stylesheet" href="{% static 'studentlearndailyregister.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+{% endblock css%}
+
+{% block content %}
+
+<section class="student-registration-section">
+    <h2 class="student-registration-heading">Registration</h2>
+   <div class="student-registration-form">
+    <form>
+        <h3 class="student-registration-form-heading">Register from here</h3>
+        <label for="fname">First Name:</label>
+<input type="text" id="fname" class="registration-fname" placeholder="First Name" required>
+
+       <label for="lname">Last Name:</label>
+<input type="text" id="lname" class="registration-lname" placeholder="Last Name" required>
+
+      
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" class="registration-email-input" placeholder="Email Id" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="registration-password-input" placeholder="Password" required>
+        
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" class="registration-confirm-password-input" placeholder="Confirm Password" required>
+        
+        <label for="otp">OTP:</label>
+        <input type="text" id="otp" class="registration-otp" placeholder="Registration OTP" required>
+        
+        <input type="submit" value="Register" class="registration-submit-button">
+    </form>
+     <p class="student-login-redirect">Already have an account? <a href="#">Log in</a> </p>
+     </div>
+</section>
+
+
+{% endblock %}
