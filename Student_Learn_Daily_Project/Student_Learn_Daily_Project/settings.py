@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Student_Web_App_Introduction_App',
     'studentregisterapp',
+    'studentloginaapp',
+    'studentresetpasswordapp',
+    'studenthomeworkapp',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +126,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'Student_Learn_Daily_Project/static')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# settings.py
+# settings.py
+
+

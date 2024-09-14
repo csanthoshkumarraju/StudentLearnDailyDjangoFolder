@@ -1,0 +1,388 @@
+.Student-Homework-section {
+    margin-top: 3.8rem;
+    background-color: #CCCCFF;
+    padding: 1.5rem;
+}
+
+.home-work-heading {
+    text-align: center;
+    padding: 2rem;
+}
+
+.ahw-H {
+    text-align: center;
+}
+
+.add-form {
+    width: 25rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.25rem;
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background-color: #C0C0FF;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 0.9375rem;
+}
+
+.label {
+    width: 7.5rem;
+    font-size: 1.2rem;
+}
+
+.text-input {
+    flex: 1;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    width: auto;
+    padding: 0.625rem 0.9375rem;
+    background-color: #3F00FF;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    color: #6F00FF;
+    background-color: white;
+}
+
+.LHTH {
+    text-align: center;
+}
+
+.list-of-home-work {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+}
+
+.list-hw-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.list-hw-table th, 
+.list-hw-table td {
+    border: 0.063rem solid #1F51FF;
+    padding: 0.3rem;
+    box-sizing: border-box;
+}
+
+.list-hw-table th {
+    background-color: #AAA1FF;
+}
+
+.In-Progress-btn {
+    width: auto;
+    height: auto;
+    padding: 0.2rem;
+    background-color: #FF5F15;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.In-Progress-btn:hover {
+    color: #FF5F15;
+    background-color: white;
+}
+
+.HIPH {
+    text-align: center;
+}
+
+.homework-in-progress {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    margin: 0 auto;
+    border: 0.063rem solid #FF4500;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+}
+
+.home-work-in-progress-tb {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.home-work-in-progress-tb th, 
+.home-work-in-progress-tb td {
+    border: 0.063rem solid #FF4500;
+    padding: 0.3rem;
+    box-sizing: border-box;
+}
+
+.home-work-in-progress-tb th {
+    background-color: #AAA1FF;
+}
+
+.Complete-btn {
+    width: auto;
+    height: auto;
+    padding: 0.2rem;
+    background-color: #4CBB17;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.Complete-btn:hover {
+    color: #4CBB17;
+    background-color: white;
+}
+
+.SCHDH {
+    text-align: center;
+}
+
+.SHD-form {
+    margin-left: 3rem;
+}
+
+.Search-btn {
+    width: auto;
+    height: auto;
+    background-color: #3F00FF;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+}
+
+.Search-btn:hover {
+    color: #6F00FF;
+    background-color: white;
+}
+
+.search-day-homework {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    margin: 0 auto;
+    border: 0.063rem solid #1DB954;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+}
+
+.particular-day-home-work-tb {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+
+.particular-day-home-work-tb th, 
+.particular-day-home-work-tb td {
+    border: 0.063rem solid #1DB954;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    max-width: 8rem; /* Ensure cells do not overflow */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.particular-day-home-work-tb th {
+    background-color: #AAA1FF;
+}
+
+.ACHH {
+    text-align: center;
+}
+
+.completed-homework {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    margin: 0 auto;
+    border: 0.063rem solid #1DB954;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+}
+
+.ACH-tb {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ACH-tb th, 
+.ACH-tb td {
+    border: 0.063rem solid #1DB954;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    max-width: 8rem; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ACH-tb th {
+    background-color: #AAA1FF;
+}
+
+
+
+/* Styles for screens between 1141px and 1279px */
+@media only screen and (min-width: 1141px) and (max-width: 1279px) {
+    .add-form {
+        width: 30rem;
+    }
+    
+    .list-of-home-work, .homework-in-progress, .completed-homework {
+        max-width: 50rem;
+    }
+    
+    .search-day-homework {
+        max-width: 25rem;
+    }
+
+    .label {
+        width: 10rem;
+    }
+
+    .text-input {
+        padding: 0.75rem;
+    }
+}
+
+/* Styles for screens between 800px and 1140px */
+@media only screen and (min-width: 850px) and (max-width: 1140px) {
+    .add-form {
+        width: 28rem;
+    }
+
+    .list-of-home-work, .homework-in-progress, .completed-homework {
+        max-width: 45rem;
+    }
+    
+    .search-day-homework {
+        max-width: 22rem;
+    }
+
+    .label {
+        width: 9rem;
+    }
+
+    .text-input {
+        padding: 0.6rem;
+    }
+}
+
+/* Styles for screens between 640px and 799px */
+@media only screen and (min-width: 760px) and (max-width: 849px) {
+    .add-form {
+        width: 24rem;
+    }
+    
+    .list-of-home-work, .homework-in-progress, .completed-homework {
+        max-width: 40rem;
+    }
+
+    .search-day-homework {
+        max-width: 20rem;
+    }
+
+    .label {
+        width: 8rem;
+    }
+
+    .text-input {
+        padding: 0.5rem;
+    }
+}
+
+/* Styles for screens between 481px and 639px */
+@media only screen and (min-width: 670px) and (max-width: 759px) {
+    .add-form {
+        width: 20rem;
+    }
+
+    .list-of-home-work, .homework-in-progress, .completed-homework {
+        max-width: 35rem;
+    }
+
+    .search-day-homework {
+        max-width: 18rem;
+    }
+
+    .label {
+        width: 7rem;
+    }
+
+    .text-input {
+        padding: 0.4rem;
+    }
+}
+
+/* Styles for screens 480px and below */
+@media (max-width: 669px) {
+    .add-form {
+        width: 100%;
+        padding: 0.4rem;
+        margin: 1.5rem auto;
+    }
+
+    .list-of-home-work, .homework-in-progress, .completed-homework, .search-day-homework {
+        width: 100%;
+        padding: 0.4rem;
+        margin: 1.5rem auto;
+    }
+
+    .label {
+        width: auto;
+        font-size: 0.6rem;
+    }
+
+    .text-input {
+        padding: 0.15rem;
+        font-size: 0.6rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .In-Progress-btn, .Complete-btn, .Search-btn {
+        width: 100%;
+        padding: 0.3rem;
+        margin: 0.5rem 0;
+    }
+
+    .list-hw-table, .home-work-in-progress-tb, .particular-day-home-work-tb, .ACH-tb {
+        font-size: 0.6rem;
+    }
+
+    .list-hw-table th, .list-hw-table td, 
+    .home-work-in-progress-tb th, .home-work-in-progress-tb td, 
+    .particular-day-home-work-tb th, .particular-day-home-work-tb td, 
+    .ACH-tb th, .ACH-tb td {
+        padding: 0.15rem;
+    }
+}

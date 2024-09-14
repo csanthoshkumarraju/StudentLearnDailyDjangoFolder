@@ -61,3 +61,13 @@
 .student-login-redirect {
      text-align:center;
 }
+
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 0.25em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}

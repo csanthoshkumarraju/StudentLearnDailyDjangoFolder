@@ -1,0 +1,34 @@
+{% extends "studentreglogresetbase.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'studentlogin.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+{% endblock css %}
+
+
+{% block content %}
+
+<section class="student-Login-section">
+    <h2 class="student-Login-heading">Login</h2>
+    <div class="student-Login-form">
+        <form method="post">
+            {% csrf_token %}
+            <h3 class="student-Login-form-heading">Login Here</h3>
+            {{ form.non_field_errors }}
+            <label for="{{ form.email.id_for_label }}">Email ID:</label>
+            {{ form.email }}
+            
+            <label for="{{ form.password.id_for_label }}">Password:</label>
+            {{ form.password }}
+            
+            <input type="submit" value="Login" class="student-login-button">
+        </form>
+        <p class="student-register-redirect">Don't have an account? <a href="{% url 'Student_Register' %}">Register</a></p>
+        <p class="student-forgot-redirect">Forgot your password? <a href="{% url "studentresetpassword" %}">Reset it here</a></p>
+    </div>
+</section>
+
+
+{% endblock content %}

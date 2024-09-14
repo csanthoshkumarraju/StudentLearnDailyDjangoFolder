@@ -1,0 +1,66 @@
+.student-Login-section {
+    background-color: #CCCCFF;
+    padding: 1.5rem;
+}
+
+.student-Login-heading {
+    text-align: center;
+    padding: 3.3rem;
+}
+
+.student-Login-form-heading {
+   text-align:center;
+}
+
+.student-Login-form {
+    width: 50%;
+    height:auto;
+    margin: 3rem auto;
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    background-color: #C0C0FF;
+}
+
+.student-Login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.student-Login-form input[type="email"],
+.student-Login-form input[type="password"],
+.student-login-email,
+.student-login-password,
+.student-Login-form input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid grey;
+    border-radius: 0.25rem;
+}
+
+.student-login-button {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background-color: #3F00FF;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-left:40%;
+
+}
+
+.student-login-button:hover {
+    color: #6F00FF;
+    background-color: white;
+}
+
+.student-register-redirect,
+.student-forgot-redirect {
+  text-align:center;
+}
