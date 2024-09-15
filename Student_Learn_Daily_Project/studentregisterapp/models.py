@@ -3,11 +3,11 @@ from django.core.validators import MinLengthValidator
 from django.core.exceptions import ValidationError
 
 class StudentRegistrationModel(models.Model):
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
-    email = models.EmailField(unique=True)
-    password = models.CharField(max_length=100)
-    confirm_password = models.CharField(max_length=100)
+    first_name = models.CharField(max_length=100,null=True)
+    last_name = models.CharField(max_length=100,null=True)
+    email = models.EmailField(unique=True,null=True)
+    password = models.CharField(max_length=100,null=True)
+    confirm_password = models.CharField(max_length=100,null=True)
 
     def clean(self):
         if self.password != self.confirm_password:

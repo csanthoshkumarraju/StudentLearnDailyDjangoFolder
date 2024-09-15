@@ -14,7 +14,7 @@ def studentlogin(request):
                 student = StudentRegistrationModel.objects.get(email=email)
                 if student.password == password:
                     request.session['student_id'] = student.id
-                    return redirect('studenthomework')
+                    return redirect('studenthomework', student_id=student.id)
                 else:
                     form.add_error(None, 'Incorrect password')
             except StudentRegistrationModel.DoesNotExist:

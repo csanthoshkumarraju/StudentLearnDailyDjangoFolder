@@ -1,193 +1,151 @@
 {% extends "studentloginbase.html" %}
 {% load static %}
 
-
 {% block css %}
-    <!-- Link to home-specific CSS -->
     <link rel="stylesheet" href="{% static 'studenthomework.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-{% endblock css%}
+{% endblock css %}
 
 {% block content %}
-
 <section class="Student-Homework-section">
     <h2 class="home-work-heading">Home Work</h2>
+    
+    <!-- Add Homework Form -->
     <div class="add-hw-form">
-      
-      <form class="add-form">
-        <h3 class="ahw-H">Add Home Work</h3>
-    <div class="form-row">
-      <label for="sname" class="label">Subject Name:</label>
-      <input type="text" id="sname" name="sname" placeholder="Subject Name" class="text-input" required>
+        <form method="post">
+            {% csrf_token %}
+            <h3 class="ahw-H">Add Home Work</h3>
+            <div class="form-row">
+                <label for="id_subject_name" class="label">Subject Name:</label>
+                {{ form.subject_name }}
+            </div>
+            <div class="form-row">
+                <label for="id_topic_name" class="label">Topic Name:</label>
+                {{ form.topic_name }}
+            </div>
+            <input type="submit" value="Add Home Work" class="submit-button">
+        </form>
+        {% if messages %}
+        {% for message in messages %}
+            <div class="alert {{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% endif %}
     </div>
-    <div class="form-row">
-      <label for="tname" class="label">Topic Name:</label>
-      <input type="text" id="tname" name="tname" placeholder="Topic Name" class="text-input" required>
-    </div>
-    <input type="submit" value="Add Home Work" class="submit-button">
-  </form>
-  
-    </div>
-  
+
+    <!-- Homework To Do Today -->
     <div class="list-of-home-work">
-      <h3 class="LHTH">List of Homework to Do Today</h3>
-      <table class="list-hw-table">
-        <tr>
-          <th>Subject</th>
-          <th>Topic</th>
-          <th>Mark as In Progress</th>
-          <th>Date Added</th>
-        </tr>
-        <tr>
-          <td>Maths <button type="button" class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button></td>
-          <td>Addition <button type="button" ><i class="fa-solid fa-pen-to-square"></i></button></td>
-          <td><button type="submit" class="In-Progress-btn">In Progress</button></td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>English <button type="button"><i class="fa-solid fa-pen-to-square"></i></i></button></td>
-          <td>Grammar <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
-          <td><button type="submit" class="In-Progress-btn">In Progress</button></td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>Physics <button type="button"><i class="fa-solid fa-pen-to-square"></i></i></button></td>
-          <td>Quantum Mechanics <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
-          <td><button type="submit" class="In-Progress-btn">In Progress</button></td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>History <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
-          <td>Ancient Civilizations <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
-          <td><button type="submit" class="In-Progress-btn">In Progress</button></td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>Geography <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
-          <td>Maps <button type="button"><i class="fa-solid fa-pen-to-square"></i></button></td>
-          <td><button type="submit" class="In-Progress-btn">In Progress</button></td>
-          <td>31/08/2024</td>
-        </tr>
-    
-  
-    
-    
-      </table>
-    </div>
-  
-    <div class="homework-in-progress">
-      <h3 class="HIPH">Homework in Progress</h3>
-      <table class="home-work-in-progress-tb">
-        <tr>
-          <th>Subject</th>
-          <th>Topic</th>
-          <th>Mark as Completed</th>
-          <th>Date In Progress</th>
-        </tr>
-        <tr>
-          <td>Maths </td>
-          <td>Addition </td>
-          <td><button type="submit" class="Complete-btn">Completed</button></td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>English</td>
-          <td>Grammar</td>
-          <td><button type="submit" class="Complete-btn">Completed</button></td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>Physics</td>
-          <td>Quantum Mechanics</td>
-          <td><button type="submit" class="Complete-btn">Completed</button></td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>History</td>
-          <td>Ancient Civilizations</td>
-          <td><button type="submit" class="Complete-btn">Completed</button></td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>Geography</td>
-          <td>Maps</td>
-          <td><button type="submit" class="Complete-btn">Completed</button></td>
-          <td>31/08/2024</td>
-        </tr>
-        
-  
-        
-        
-        
-      </table>
-    </div>
-  
-    <div class="search-day-homework">
-      <h3 class="SCHDH"> Search Completed Homework by Date</h3>
-      <form class="SHD-form">
-        <label for="homework-date">Search Homework by Date:</label>
-        <input type="date" id="homework-date" name="homework-date" placeholder="Select a date" required>
-        <button type="submit" class="Search-btn">Search</button>
-      </form>
-      <h3 class="SCHDH">Completed Homework on 31/08/2024</h3>
-      <table class="particular-day-home-work-tb">
-              <tr>
+        <h3 class="LHTH">List of Homework to Do Today</h3>
+        <table class="list-hw-table">
+            <tr>
                 <th>Subject</th>
                 <th>Topic</th>
-              </tr>
-              <tr>
-                <td>Maths </td>
-                <td>Addition </td>
-              </tr>
-              <tr> 
-                <td>English</td>
-                <td>Grammar</td>
-              </tr>
-              <tr>
-                <td>Physics</td>
-                <td>Quantum Mechanics</td>
-              </tr>
-  
-        
-      </table>
+                <th>Mark as In Progress</th>
+                <th>Date Added</th>
+            </tr>
+            {% for homework in homework_today %}
+            <tr>
+                <td>{{ homework.subject_name }}
+                    <form method="post" style="display:inline;">
+                        {% csrf_token %}
+                        <input type="hidden" name="hw_id" value="{{ homework.id }}">
+                        <button type="submit" name="mark_in_progress" class="edit-btn">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </form>
+                </td>
+                <td>{{ homework.topic_name }}</td>
+                <td>{{ homework.date }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4">No homework for today</td>
+            </tr>
+            {% endfor %}
+        </table>
     </div>
-  
-    <div class="completed-homework">
-      <h3 class="ACHH">All Completed Homework</h3>
-      <table class="ACH-tb">
-        <tr>
-          <th>Subject</th>
-          <th>Topic</th>
-          <th>Completion Date</th>
-        </tr>
-        <tr>
-          <td>Maths </td>
-          <td>Addition </td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>English</td>
-          <td>Grammar</td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>Physics</td>
-          <td>Quantum Mechanics</td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>History</td>
-          <td>Ancient Civilizations</td>
-          <td>31/08/2024</td>
-        </tr>
-        <tr>
-          <td>Geography</td>
-          <td>Maps</td>
-          <td>31/08/2024</td>
-        </tr>
-        
-      </table>
-    </div>
-  </section>
 
-  {% endblock content %}
+    <!-- Homework In Progress -->
+    <div class="homework-in-progress">
+        <h3 class="HIPH">Homework in Progress</h3>
+        <table class="home-work-in-progress-tb">
+            <tr>
+                <th>Subject</th>
+                <th>Topic</th>
+                <th>Mark as Completed</th>
+                <th>Date In Progress</th>
+            </tr>
+            {% for homework in homework_in_progress %}
+            <tr>
+                <td>{{ homework.subject_name }}</td>
+                <td>{{ homework.topic_name }}</td>
+                <td>
+                    <form method="post" style="display:inline;">
+                        {% csrf_token %}
+                        <input type="hidden" name="hw_id" value="{{ homework.id }}">
+                        <button type="submit" name="mark_completed" class="Complete-btn">Completed</button>
+                    </form>
+                </td>
+                <td>{{ homework.date }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4">No homework in progress</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <!-- Search Completed Homework by Date -->
+    <div class="search-day-homework">
+        <h3 class="SCHDH">Search Completed Homework by Date</h3>
+        <form method="post">
+            {% csrf_token %}
+            <label for="homework-date">Search Homework by Date:</label>
+            <input type="date" id="homework-date" name="search_date" placeholder="Select a date" value="{{ search_date }}" required>
+            <button type="submit" class="Search-btn">Search</button>
+        </form>
+        <h3 class="SCHDH">Completed Homework on {{ search_date }}</h3>
+        <table class="particular-day-home-work-tb">
+            <tr>
+                <th>Subject</th>
+                <th>Topic</th>
+            </tr>
+            {% for homework in completed_homework %}
+            <tr>
+                <td>{{ homework.subject_name }}</td>
+                <td>{{ homework.topic_name }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2">No completed homework for this date</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <!-- All Completed Homework -->
+    <div class="completed-homework">
+        <h3 class="ACHH">All Completed Homework</h3>
+        <table class="ACH-tb">
+            <tr>
+                <th>Subject</th>
+                <th>Topic</th>
+                <th>Completion Date</th>
+            </tr>
+            {% for homework in completed_homework_all %}
+            <tr>
+                <td>{{ homework.subject_name }}</td>
+                <td>{{ homework.topic_name }}</td>
+                <td>{{ homework.completion_date }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3">No completed homework</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</section>
+{% endblock content %}
