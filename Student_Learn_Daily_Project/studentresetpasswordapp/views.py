@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from django.core.mail import send_mail
 from .forms import ResetPasswordForm
 from studentregisterapp.models import StudentRegistrationModel
 
@@ -18,13 +17,12 @@ def student_reset_password(request):
 
             try:
                 student = StudentRegistrationModel.objects.get(email=email)
-                student.password = password
-                student.confirm_password = confirm_password
+                student.set_password(password)  # Hash the new password
                 student.save()
-                messages.success(request, 'Password reset successfully. You can now log in.')
+                messages.success(request, 'Password has been reset successfully. You can now log in.')
                 return redirect('studentlogin')
             except StudentRegistrationModel.DoesNotExist:
-                messages.error(request, 'Email address not registered.')
+                messages.error(request, 'Email address not found.')
                 return render(request, 'studentresetpasswordapp.html', {'form': form})
     else:
         form = ResetPasswordForm()

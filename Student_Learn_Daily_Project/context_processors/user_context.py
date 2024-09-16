@@ -14,3 +14,5 @@ def student_context(request):
     return {
         'student_name': student_name
     }
+
+

@@ -26,9 +26,10 @@
             <input type="submit" value="Login" class="student-login-button">
         </form>
         <p class="student-register-redirect">Don't have an account? <a href="{% url 'Student_Register' %}">Register</a></p>
-        <p class="student-forgot-redirect">Forgot your password? <a href="{% url "studentresetpassword" %}">Reset it here</a></p>
+        <p class="student-forgot-redirect">Forgot your password? <a href="{% url 'studentresetpassword' %}">Reset it here</a></p>
     </div>
 </section>
+
 
 
 {% endblock content %}

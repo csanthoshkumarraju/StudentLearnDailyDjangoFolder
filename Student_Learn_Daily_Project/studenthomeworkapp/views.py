@@ -4,9 +4,17 @@ from .forms import StudentHomeworkForm
 from .models import StudentHomeworkModel
 from django.utils import timezone
 from datetime import datetime
+from studentregisterapp.models import StudentRegistrationModel
+
 
 def studenthomework(request, student_id):
-    today = timezone.now().date()  # Get today's date
+    student_name = ""
+    today = timezone.now().date() 
+    try:
+        student = StudentRegistrationModel.objects.get(pk=student_id)
+        student_name = f"{student.first_name} {student.last_name}"
+    except StudentRegistrationModel.DoesNotExist:
+        student_name = ""
 
     if request.method == 'POST':
         # Handle search by date
@@ -72,5 +80,6 @@ def studenthomework(request, student_id):
         'homework_in_progress': StudentHomeworkModel.objects.filter(status='In Progress'),
         'completed_homework': [],
         'completed_homework_all': StudentHomeworkModel.objects.filter(status='Completed'),
-        'search_date': today
+        'search_date': today,
+        'student_name': student_name
     })
