@@ -4,6 +4,7 @@
 {% block css %}
     <link rel="stylesheet" href="{% static 'studenthomework.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 {% endblock css %}
 
 {% block content %}
@@ -24,11 +25,6 @@
                 {{ form.topic_name }}
             </div>
             <input type="submit" value="Add Home Work" class="submit-button" name="add_homework">
-            {% if add_homework_message %}
-                <ul class="success-messages">
-                    <li class="message">{{ add_homework_message }}</li>
-                </ul>
-            {% endif %}
         </form>
     </div>
     
@@ -145,5 +141,5 @@
     </div>
 </section>
 
+{% endblock %}
 
-{% endblock content %}
