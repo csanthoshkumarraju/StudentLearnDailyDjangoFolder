@@ -1,0 +1,627 @@
+.Student-Assignment-section {
+/*        margin-top: 3.8rem; */
+       background-color: #CCCCFF;
+       padding: 1.5rem;
+  
+}
+
+.Assignment-heading {
+     text-align:center;
+     padding:3.3rem;
+}
+
+.add-assignment-form-div {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+    text-align: center;
+}
+
+.Add-assignment-input-box {
+    width: 30rem;
+    height: 10rem;
+    margin: 2rem;
+}
+
+.assignment-submit-button {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background-color: #3F00FF;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.assignment-submit-button:hover {
+    color: #6F00FF;
+    background-color: white;
+}
+
+.assignment-to-do-heading {
+     text-align:center;
+}
+
+.assignment-to-do {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+    text-align: center;
+}
+
+.assignment-to-do-list-p {
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    width:30rem;
+    height:auto;
+    padding:1rem;
+    margin-left:4rem;
+    text-align:center;
+    text-align: justify;
+}
+
+.assignment-to-do-in-progress-btn {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background-color: #FF5F15;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.assignment-to-do-in-progress-btn:hover {
+    color: #FF5F15;
+    background-color: white;
+}
+
+
+.assignment-in-progress {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border: 0.063rem solid #FF4500;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+    text-align: center;
+}
+
+.assignment-in-progress-list-p {
+    border: 0.063rem solid #FF4500;
+    border-radius: 0.3125rem;
+    width:30rem;
+    height:auto;
+    padding:1rem;
+    margin-left:4rem;
+    text-align:center;
+    text-align: justify;
+}
+
+.assignment-complete-btn {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background-color: #4CBB17;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.assignment-complete-btn:hover {
+    color: #4CBB17;
+    background-color: white;
+}
+
+.assignments-all-completed {
+   width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border: 0.063rem solid #1DB954;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+    text-align: center;
+  
+}
+
+.assignment-completed-list-p {
+    border: 0.063rem solid #1DB954;
+    border-radius: 0.3125rem;
+    width:30rem;
+    height:auto;
+    padding:1rem;
+    margin-left:4rem;
+    text-align:center;
+    text-align: justify;
+}
+
+
+/* @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+        
+} */
+/*  
+@media only screen and (min-width: 800px) and (max-width: 1140px) {
+} */
+
+@media only screen and (min-width: 640px) and (max-width: 799px) {
+           .add-assignment-form-div {
+                width: 100%;
+                max-width: 30rem;
+                height: auto;
+                border: 0.063rem solid #1F51FF;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+            }
+
+            .Add-assignment-input-box {
+                width: 25rem;
+                height: 10rem;
+                margin: 2rem;
+            }
+
+            .assignment-submit-button {
+                width: auto;
+                height: auto;
+                padding: 0.5rem 1rem;
+                background-color: #3F00FF;
+                color: #fff;
+                border: 0.1rem solid grey;
+                border-radius: 0.1875rem;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+            }
+
+            .assignment-submit-button:hover {
+                color: #6F00FF;
+                background-color: white;
+            }
+
+            .assignment-to-do-heading {
+                 text-align:center;
+            }
+
+            .assignment-to-do {
+                width: 100%;
+                max-width: 30rem;
+                height: auto;
+                border: 0.063rem solid #1F51FF;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+            }
+
+            .assignment-to-do-list-p {
+                border: 0.063rem solid #1F51FF;
+                border-radius: 0.3125rem;
+                width:25rem;
+                height:auto;
+                padding:1rem;
+                margin:auto;
+                text-align:center;
+                text-align: justify;
+            }
+
+            .assignment-to-do-in-progress-btn {
+                width: auto;
+                height: auto;
+                padding: 0.5rem 1rem;
+                background-color: #FF5F15;
+                color: #fff;
+                border: 0.1rem solid grey;
+                border-radius: 0.1875rem;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+                margin:1rem;
+            }
+
+            .assignment-to-do-in-progress-btn:hover {
+                color: #FF5F15;
+                background-color: white;
+            }
+
+
+            .assignment-in-progress {
+                width: 100%;
+                max-width: 30rem;
+                height: auto;
+                border: 0.063rem solid #FF4500;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+            }
+
+            .assignment-in-progress-list-p {
+                border: 0.063rem solid #FF4500;
+                border-radius: 0.3125rem;
+                width:25rem;
+                height:auto;
+                padding:1rem;
+                margin:auto;
+                text-align:center;
+                text-align: justify;
+            }
+
+            .assignment-complete-btn {
+                width: auto;
+                height: auto;
+                padding: 0.5rem 1rem;
+                background-color: #4CBB17;
+                color: #fff;
+                border: 0.1rem solid grey;
+                border-radius: 0.1875rem;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+                margin:1rem;
+            }
+
+            .assignment-complete-btn:hover {
+                color: #4CBB17;
+                background-color: white;
+            }
+
+            .assignments-all-completed {
+               width: 100%;
+                max-width: 30rem;
+                height: auto;
+                border: 0.063rem solid #1DB954;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+
+            }
+
+            .assignment-completed-list-p {
+                border: 0.063rem solid #1DB954;
+                border-radius: 0.3125rem;
+                width:25rem;
+                height:auto;
+                padding:1rem;
+                margin:1.5rem auto;
+                text-align:center;
+                text-align: justify;
+            }
+  
+  
+  
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+       .add-assignment-form-div {
+                width: 80%;
+                max-width: 25rem;
+                height: auto;
+                border: 0.063rem solid #1F51FF;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+            }
+
+            .Add-assignment-input-box {
+                width: 20rem;
+                height: 10rem;
+                margin: 2rem;
+            }
+
+            .assignment-submit-button {
+                width: auto;
+                height: auto;
+                padding: 0.5rem 1rem;
+                background-color: #3F00FF;
+                color: #fff;
+                border: 0.1rem solid grey;
+                border-radius: 0.1875rem;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+            }
+
+            .assignment-submit-button:hover {
+                color: #6F00FF;
+                background-color: white;
+            }
+
+            .assignment-to-do-heading {
+                 text-align:center;
+            }
+
+            .assignment-to-do {
+                width: 80%;
+                max-width: 25rem;
+                height: auto;
+                border: 0.063rem solid #1F51FF;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+            }
+
+            .assignment-to-do-list-p {
+                border: 0.063rem solid #1F51FF;
+                border-radius: 0.3125rem;
+                width:20rem;
+                height:auto;
+                padding:1rem;
+                margin:auto;
+                text-align:center;
+                text-align: justify;
+            }
+
+            .assignment-to-do-in-progress-btn {
+                width: auto;
+                height: auto;
+                padding: 0.5rem 1rem;
+                background-color: #FF5F15;
+                color: #fff;
+                border: 0.1rem solid grey;
+                border-radius: 0.1875rem;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+                margin:1rem;
+            }
+
+            .assignment-to-do-in-progress-btn:hover {
+                color: #FF5F15;
+                background-color: white;
+            }
+
+
+            .assignment-in-progress {
+                width: 80%;
+                max-width: 25rem;
+                height: auto;
+                border: 0.063rem solid #FF4500;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+            }
+
+            .assignment-in-progress-list-p {
+                border: 0.063rem solid #FF4500;
+                border-radius: 0.3125rem;
+                width:20rem;
+                height:auto;
+                padding:1rem;
+                margin:auto;
+                text-align:center;
+                text-align: justify;
+            }
+
+            .assignment-complete-btn {
+                width: auto;
+                height: auto;
+                padding: 0.5rem 1rem;
+                background-color: #4CBB17;
+                color: #fff;
+                border: 0.1rem solid grey;
+                border-radius: 0.1875rem;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+                margin:1rem;
+            }
+
+            .assignment-complete-btn:hover {
+                color: #4CBB17;
+                background-color: white;
+            }
+
+            .assignments-all-completed {
+               width: 80%;
+                max-width: 25rem;
+                height: auto;
+                border: 0.063rem solid #1DB954;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+
+            }
+
+            .assignment-completed-list-p {
+                border: 0.063rem solid #1DB954;
+                border-radius: 0.3125rem;
+                width:20rem;
+                height:auto;
+                padding:1rem;
+                margin:1.5rem auto;
+                text-align:center;
+                text-align: justify;
+            }
+  
+  
+}
+
+@media (max-width: 480px) { 
+    .add-assignment-form-div {
+                width: 70%;
+                max-width: 20rem;
+                height: auto;
+                border: 0.063rem solid #1F51FF;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+            }
+
+            .Add-assignment-input-box {
+                width: 65%;
+                max-width: 20rem;
+                height: 10rem;
+                margin: 2rem;
+            }
+
+            .assignment-submit-button {
+                width: auto;
+                height: auto;
+                padding: 0.5rem 1rem;
+                background-color: #3F00FF;
+                color: #fff;
+                border: 0.1rem solid grey;
+                border-radius: 0.1875rem;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+            }
+
+            .assignment-submit-button:hover {
+                color: #6F00FF;
+                background-color: white;
+            }
+
+            .assignment-to-do-heading {
+                 text-align:center;
+            }
+
+            .assignment-to-do {
+                width: 70%;
+                max-width: 20rem;
+                height: auto;
+                border: 0.063rem solid #1F51FF;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+            }
+
+            .assignment-to-do-list-p {
+                border: 0.063rem solid #1F51FF;
+                border-radius: 0.3125rem;
+                width:12rem;
+                height:auto;
+                padding:1rem;
+                margin:auto;
+                text-align:center;
+                text-align: justify;
+            }
+
+            .assignment-to-do-in-progress-btn {
+                width: auto;
+                height: auto;
+                padding: 0.5rem 1rem;
+                background-color: #FF5F15;
+                color: #fff;
+                border: 0.1rem solid grey;
+                border-radius: 0.1875rem;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+                margin:1rem;
+            }
+
+            .assignment-to-do-in-progress-btn:hover {
+                color: #FF5F15;
+                background-color: white;
+            }
+
+
+            .assignment-in-progress {
+                width: 70%;
+                max-width: 20rem;
+                height: auto;
+                border: 0.063rem solid #FF4500;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+            }
+
+            .assignment-in-progress-list-p {
+                border: 0.063rem solid #FF4500;
+                border-radius: 0.3125rem;
+                width:12rem;
+                height:auto;
+                padding:1rem;
+                margin:auto;
+                text-align:center;
+                text-align: justify;
+            }
+
+            .assignment-complete-btn {
+                width: auto;
+                height: auto;
+                padding: 0.5rem 1rem;
+                background-color: #4CBB17;
+                color: #fff;
+                border: 0.1rem solid grey;
+                border-radius: 0.1875rem;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+                margin:1rem;
+            }
+
+            .assignment-complete-btn:hover {
+                color: #4CBB17;
+                background-color: white;
+            }
+
+            .assignments-all-completed {
+               width: 70%;
+                max-width: 20rem;
+                height: auto;
+                border: 0.063rem solid #1DB954;
+                border-radius: 0.3125rem;
+                padding: 2rem;
+                margin: 3rem auto;
+                background-color: #C0C0FF;
+                text-align: center;
+
+            }
+
+            .assignment-completed-list-p {
+                border: 0.063rem solid #1DB954;
+                border-radius: 0.3125rem;
+                width:12rem;
+                height:auto;
+                padding:1rem;
+                margin:1.5rem auto;
+                text-align:center;
+                text-align: justify;
+            }
+ 
+  
+}

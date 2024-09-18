@@ -110,6 +110,7 @@ def studenthomework(request, student_id):
         elif 'mark_in_progress' in request.POST:
             homework = get_object_or_404(StudentHomeworkModel, id=homework_id, student=student)
             homework.status = 'In Progress'
+            homework.date = timezone.now().date()
             homework.save()
             messages.success(request, 'Homework status updated to In Progress.')
             return redirect('studenthomework', student_id=student_id)
@@ -117,6 +118,7 @@ def studenthomework(request, student_id):
         elif 'mark_completed' in request.POST:
             homework = get_object_or_404(StudentHomeworkModel, id=homework_id, student=student)
             homework.status = 'Completed'
+            homework.date = timezone.now().date()
             homework.save()
             messages.success(request, 'Homework status updated to Completed.')
             return redirect('studenthomework', student_id=student_id)

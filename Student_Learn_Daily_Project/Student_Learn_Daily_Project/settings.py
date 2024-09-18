@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'studentresetpasswordapp',
     'studenthomeworkapp',
     'studentloginnameapp',
+    'studentassignmentsapp',
 ]
 
 MIDDLEWARE = [

@@ -12,7 +12,7 @@
         <h1 class="SLD-Menu"><i class="fa-solid fa-bars fa-beat"></i>
           <ul class="student-nav-links-dropdown-SLD-Menu">
                 <li class="student-nav-links-li"><a href="{% url "studenthomework" student_id %}">Homework</a></li>
-                <li class="student-nav-links-li"><a href="#">Assignments</a></li>
+                <li class="student-nav-links-li"><a href="{% url "studentasignments" student_id %}">Assignments</a></li>
                 <li class="student-nav-links-li"><a href="#">Daily</a></li>
                 <li class="student-nav-links-li"><a href="#">Monthly</a></li>
                 <li class="student-nav-links-li"><a href="#">Yearly</a></li>
@@ -29,7 +29,7 @@
     </div>
     <ul class="student-nav-links">
         <li class="student-nav-links-li"><a href="{% url "studenthomework" student_id %}">Homework</a></li>
-        <li class="student-nav-links-li"><a href="#">Assignments</a></li>
+        <li class="student-nav-links-li"><a href="{% url "studentasignments" student_id %}">Assignments</a></li>
         <li class="student-nav-links-li"><a href="#">Daily</a></li>
         <li class="student-nav-links-li"><a href="#">Monthly</a></li>
         <li class="student-nav-links-li"><a href="#">Yearly</a></li>
@@ -42,7 +42,7 @@
     <p class="dropdown-trigger">Menu</p>
     <ul class="student-nav-links-dropdown">
         <li class="student-nav-links-li"><a href="{% url "studenthomework" student_id %}">Homework</a></li>
-        <li class="student-nav-links-li"><a href="#">Assignments</a></li>
+        <li class="student-nav-links-li"><a href="{% url "studentasignments" student_id %}">Assignments</a></li>
         <li class="student-nav-links-li"><a href="#">Daily</a></li>
         <li class="student-nav-links-li"><a href="#">Monthly</a></li>
         <li class="student-nav-links-li"><a href="#">Yearly</a></li>
