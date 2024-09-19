@@ -24,6 +24,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login as auth_login
 from .forms import LoginForm
+from django.contrib import messages
 from studentregisterapp.models import StudentRegistrationModel
 
 def studentlogin(request):
@@ -40,7 +41,9 @@ def studentlogin(request):
                 auth_login(request, user)
 
                 # Redirect to studenthomework page
+                messages.success(request, 'Login Successful')
                 return redirect('studenthomework', student_id=user.id)
+                
             else:
                 form.add_error(None, 'Invalid email or password')
     else:

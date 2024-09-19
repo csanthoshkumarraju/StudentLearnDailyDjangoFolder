@@ -31,8 +31,6 @@
                 {% if assignments_todos %}
                     {% for assignment in assignments_todos %}
                     <p class="assignment-to-do-list-p">  {{ assignment.assignment }} </p>
-                    <input type="hidden" name="assignment_id" value="{{ assignment.id }}">
-                    
 
                     <form method="post" style="display:inline;">
                         {% csrf_token %}

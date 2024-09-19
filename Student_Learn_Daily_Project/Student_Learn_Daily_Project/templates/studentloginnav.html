@@ -13,7 +13,7 @@
           <ul class="student-nav-links-dropdown-SLD-Menu">
                 <li class="student-nav-links-li"><a href="{% url "studenthomework" student_id %}">Homework</a></li>
                 <li class="student-nav-links-li"><a href="{% url "studentasignments" student_id %}">Assignments</a></li>
-                <li class="student-nav-links-li"><a href="#">Daily</a></li>
+                <li class="student-nav-links-li"><a href="{% url "studentdailypage" student_id %}">Daily</a></li>
                 <li class="student-nav-links-li"><a href="#">Monthly</a></li>
                 <li class="student-nav-links-li"><a href="#">Yearly</a></li>
                 <li class="student-nav-links-li"><a href="#">Goals</a></li>
@@ -30,7 +30,7 @@
     <ul class="student-nav-links">
         <li class="student-nav-links-li"><a href="{% url "studenthomework" student_id %}">Homework</a></li>
         <li class="student-nav-links-li"><a href="{% url "studentasignments" student_id %}">Assignments</a></li>
-        <li class="student-nav-links-li"><a href="#">Daily</a></li>
+        <li class="student-nav-links-li"><a href="{% url "studentdailypage" student_id %}">Daily</a></li>
         <li class="student-nav-links-li"><a href="#">Monthly</a></li>
         <li class="student-nav-links-li"><a href="#">Yearly</a></li>
         <li class="student-nav-links-li"><a href="#">Goals</a></li>
@@ -43,7 +43,7 @@
     <ul class="student-nav-links-dropdown">
         <li class="student-nav-links-li"><a href="{% url "studenthomework" student_id %}">Homework</a></li>
         <li class="student-nav-links-li"><a href="{% url "studentasignments" student_id %}">Assignments</a></li>
-        <li class="student-nav-links-li"><a href="#">Daily</a></li>
+        <li class="student-nav-links-li"><a href="{% url "studentdailypage" student_id %}">Daily</a></li>
         <li class="student-nav-links-li"><a href="#">Monthly</a></li>
         <li class="student-nav-links-li"><a href="#">Yearly</a></li>
         <li class="student-nav-links-li"><a href="#">Goals</a></li>

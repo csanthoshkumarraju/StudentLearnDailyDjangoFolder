@@ -1,0 +1,102 @@
+{% extends "studentloginbase.html" %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'studentdaily.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+{% endblock css %}
+
+
+
+{% block content %}
+
+<section id="student-daily-plan-id" class="Student-daily-plan-section">
+    <h2 class="student-daily-heading">Daily Plans</h2>
+   
+    <div class="add-daily-plan-form">
+        <h3 class="student-daily-plan"></h3>
+        <form class="add-daily-plan-submit-form" method="post">
+            {% csrf_token %}
+            <label for="Adname">Add daily Plan</label><br>
+            {{ form.daily_plan }}
+            <input type="submit" name="adddailyplan" value="Add Daily Plan" class="add-daily-plan-button">
+        </form>
+    </div>
+   
+    <div class="daily-plans-to-do">
+        <h3 class="daily-plans-to-do-heading">Plans to Do on {{ today_date }} </h3>
+        <div>
+            {% if daily_plan_to_do %}
+             {% for daily_plan_td in daily_plan_to_do %}
+             <p class="daily-plans-to-do-list-p"> {{ daily_plan_td.daily_plan }} </p>
+
+             <form method="post">
+                {% csrf_token %}
+                <input type="hidden" name="daily_id" value="{{ daily_plan_td.id }}">
+                <button type="submit" class="daily-plans-to-do-in-progress-btn" name="daily_plan_in_progress">In Progress</button>
+            </form>
+            
+            {% endfor %}
+
+            
+            {% else %}
+            <p class="daily-plans-to-do-list-p">There are no study plans for today.</p>
+            {% endif %}
+
+        </div>
+    </div>
+   
+    <div class="daily-plan-in-progress">
+        <h3 class="daily-plan-in-progress-heading">Daily Plans In Progress</h3>
+        <div>
+        
+            {% if daily_plans_in_progress %}
+            
+            {% for daily_plan_in_p in daily_plans_in_progress  %}
+            
+            <p class="daily-plan-in-progress-list-p">  {{ daily_plan_in_p.daily_plan  }} </p>
+            
+            <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="daily_id" value="{{ daily_plan_in_p.id }}">
+            <button type= "submit" class="daily-plan-complete-btn" name = "daily_plan_complete">Completed</button>
+          </form>
+            
+            
+            {% endfor %}
+            
+            {% else %}
+
+            <p class="daily-plan-in-progress-list-p">No daily plans in progress</p>
+            
+            {% endif %}
+     
+        </div>
+    </div>
+   
+    <div class="daily-plans-all-completed">
+        <h3 class="assignments-all-completed-heading">Completed Daily Plans</h3>
+        <div>
+
+            {% if daily_plans_completed %}
+             
+            {% for daily_plan_completed in daily_plans_completed %}
+            
+            <p class="daily-plans-completed-list-p"> {{ daily_plan_completed.daily_plan }}  </p>
+
+            {% endfor %}
+
+            {% else %}
+            <p class="daily-plans-completed-list-p">No completed plans</p>
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock content %}
