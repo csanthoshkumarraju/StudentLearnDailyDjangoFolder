@@ -1,0 +1,611 @@
+.Student-yearly-plan-section {
+    background-color: #CCCCFF;
+    padding: 1.5rem;
+}
+
+.student-yearly-heading {
+    text-align: center;
+    padding: 3.3rem;
+}
+
+.add-yearly-plan-form {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+    text-align: center;
+}
+
+.Add-yearly-plan-input-box {
+    width: 25rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
+.add-yearly-plan-button {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background-color: #3F00FF;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.add-yearly-plan-button:hover {
+    color: #6F00FF;
+    background-color: white;
+}
+
+.yearly-plans-to-do-heading {
+    text-align: center;
+}
+
+.yearly-plans-to-do {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+    text-align: center;
+}
+
+.yearly-plans-to-do-list-p {
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    width: 30rem;
+    height: auto;
+    padding: 1rem;
+    margin-left: 4rem;
+    text-align: center;
+    text-align: justify;
+}
+
+.yearly-plans-to-do-in-progress-btn {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background-color: #FF5F15;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.yearly-plans-to-do-in-progress-btn:hover {
+    color: #FF5F15;
+    background-color: white;
+}
+
+.yearly-plan-in-progress {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border: 0.063rem solid #FF4500;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+    text-align: center;
+}
+
+.yearly-plan-in-progress-list-p {
+    border: 0.063rem solid #FF4500;
+    border-radius: 0.3125rem;
+    width: 30rem;
+    height: auto;
+    padding: 1rem;
+    margin-left: 4rem;
+    text-align: center;
+    text-align: justify;
+}
+
+.yearly-plan-complete-btn {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background-color: #4CBB17;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.yearly-plan-complete-btn:hover {
+    color: #4CBB17;
+    background-color: white;
+}
+
+.yearly-plans-all-completed {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border: 0.063rem solid #1DB954;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+    text-align: center;
+}
+
+.yearly-plans-completed-list-p {
+    border: 0.063rem solid #1DB954;
+    border-radius: 0.3125rem;
+    width: 30rem;
+    height: auto;
+    padding: 1rem;
+    margin-left: 4rem;
+    text-align: center;
+    text-align: justify;
+}
+
+
+
+/* @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+        
+} */
+/*  
+@media only screen and (min-width: 800px) and (max-width: 1140px) {
+} */
+
+@media only screen and (min-width: 640px) and (max-width: 799px) {
+    .add-yearly-plan-form {
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .Add-yearly-plan-input-box {
+        width: 25rem;
+        height: 10rem;
+        margin: 2rem;
+    }
+
+    .add-yearly-plan-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #3F00FF;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .add-yearly-plan-button:hover {
+        color: #6F00FF;
+        background-color: white;
+    }
+
+    .yearly-plans-to-do-heading {
+        text-align: center;
+    }
+
+    .yearly-plans-to-do {
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .yearly-plans-to-do-list-p {
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        width: 25rem;
+        height: auto;
+        padding: 1rem;
+        margin: auto;
+        text-align: center;
+        text-align: justify;
+    }
+
+    .yearly-plans-to-do-in-progress-btn {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #FF5F15;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .yearly-plans-to-do-in-progress-btn:hover {
+        color: #FF5F15;
+        background-color: white;
+    }
+
+    .yearly-plan-in-progress {
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+        border: 0.063rem solid #FF4500;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .yearly-plan-in-progress-list-p {
+        border: 0.063rem solid #FF4500;
+        border-radius: 0.3125rem;
+        width: 25rem;
+        height: auto;
+        padding: 1rem;
+        margin: auto;
+        text-align: center;
+        text-align: justify;
+    }
+
+    .yearly-plan-complete-btn {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #4CBB17;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .yearly-plan-complete-btn:hover {
+        color: #4CBB17;
+        background-color: white;
+    }
+
+    .yearly-plans-all-completed {
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .yearly-plans-completed-list-p {
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        width: 25rem;
+        height: auto;
+        padding: 1rem;
+        margin: 1.5rem auto;
+        text-align: center;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+    .add-yearly-plan-form {
+        width: 80%;
+        max-width: 25rem;
+        height: auto;
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .Add-yearly-plan-input-box {
+        width: 20rem;
+        height: 10rem;
+        margin: 2rem;
+    }
+
+    .add-yearly-plan-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #3F00FF;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .add-yearly-plan-button:hover {
+        color: #6F00FF;
+        background-color: white;
+    }
+
+    .yearly-plans-to-do-heading {
+        text-align: center;
+    }
+
+    .yearly-plans-to-do {
+        width: 80%;
+        max-width: 25rem;
+        height: auto;
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .yearly-plans-to-do-list-p {
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        width: 20rem;
+        height: auto;
+        padding: 1rem;
+        margin: auto;
+        text-align: center;
+        text-align: justify;
+    }
+
+    .yearly-plans-to-do-in-progress-btn {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #FF5F15;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .yearly-plans-to-do-in-progress-btn:hover {
+        color: #FF5F15;
+        background-color: white;
+    }
+
+    .yearly-plan-in-progress {
+        width: 80%;
+        max-width: 25rem;
+        height: auto;
+        border: 0.063rem solid #FF4500;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .yearly-plan-in-progress-list-p {
+        border: 0.063rem solid #FF4500;
+        border-radius: 0.3125rem;
+        width: 20rem;
+        height: auto;
+        padding: 1rem;
+        margin: auto;
+        text-align: center;
+        text-align: justify;
+    }
+
+    .yearly-plan-complete-btn {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #4CBB17;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .yearly-plan-complete-btn:hover {
+        color: #4CBB17;
+        background-color: white;
+    }
+
+    .yearly-plans-all-completed {
+        width: 80%;
+        max-width: 25rem;
+        height: auto;
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .yearly-plans-completed-list-p {
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        width: 20rem;
+        height: auto;
+        padding: 1rem;
+        margin: 1.5rem auto;
+        text-align: center;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-yearly-plan-form {
+        width: 70%;
+        max-width: 20rem;
+        height: auto;
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .Add-yearly-plan-input-box {
+        width: 65%;
+        max-width: 20rem;
+        height: 10rem;
+        margin: 2rem;
+    }
+
+    .add-yearly-plan-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #3F00FF;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .add-yearly-plan-button:hover {
+        color: #6F00FF;
+        background-color: white;
+    }
+
+    .yearly-plans-to-do-heading {
+        text-align: center;
+    }
+
+    .yearly-plans-to-do {
+        width: 70%;
+        max-width: 20rem;
+        height: auto;
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .yearly-plans-to-do-list-p {
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        width: 12rem;
+        height: auto;
+        padding: 1rem;
+        margin: auto;
+        text-align: center;
+        text-align: justify;
+    }
+
+    .yearly-plans-to-do-in-progress-btn {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #FF5F15;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .yearly-plans-to-do-in-progress-btn:hover {
+        color: #FF5F15;
+        background-color: white;
+    }
+
+    .yearly-plan-in-progress {
+        width: 70%;
+        max-width: 20rem;
+        height: auto;
+        border: 0.063rem solid #FF4500;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .yearly-plan-in-progress-list-p {
+        border: 0.063rem solid #FF4500;
+        border-radius: 0.3125rem;
+        width: 12rem;
+        height: auto;
+        padding: 1rem;
+        margin: auto;
+        text-align: center;
+        text-align: justify;
+    }
+
+    .yearly-plan-complete-btn {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #4CBB17;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .yearly-plan-complete-btn:hover {
+        color: #4CBB17;
+        background-color: white;
+    }
+
+    .yearly-plans-all-completed {
+        width: 70%;
+        max-width: 20rem;
+        height: auto;
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .yearly-plans-completed-list-p {
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        width: 12rem;
+        height: auto;
+        padding: 1rem;
+        margin: 1.5rem auto;
+        text-align: center;
+        text-align: justify;
+    }
+}

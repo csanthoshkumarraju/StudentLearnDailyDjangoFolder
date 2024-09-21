@@ -1,0 +1,106 @@
+{% extends "studentloginbase.html" %}
+
+{% load static %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'studentyearly.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+
+{% endblock css %}
+
+
+{% block content %}
+
+
+
+<section id="student-yearly-plan-id" class="Student-yearly-plan-section">
+    <h2 class="student-yearly-heading">Yearly Plans</h2>
+   
+    <div class="add-yearly-plan-form">
+        <h3 class="student-yearly-plan"></h3>
+        <form class="add-yearly-plan-submit-form" method="post">
+            {% csrf_token %}
+            <label for="Adname">Add Yearly Plan </label><br>
+            {{ form.yearly_plan }}
+            <input type="submit" name="addyearlyplan" value="Add Yearly Plan" class="add-yearly-plan-button">
+        </form>
+    </div>
+   
+    <div class="yearly-plans-to-do">
+        <h3 class="yearly-plans-to-do-heading">Plans to Do in {{ curr_year }} </h3>
+        <div>
+
+            {% if yearly_plans_todos %}
+            
+            {% for yealy_plan_t in yearly_plans_todos %}
+            
+            <p class="yearly-plans-to-do-list-p"> {{ yealy_plan_t.yearly_plan }} </p>
+
+            <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="yearly_id" value="{{ yealy_plan_t.id }}">
+            <button type="submit" name="yearlyplaninp" class="yearly-plans-to-do-in-progress-btn">In Progress</button>
+            </form>
+            
+            {% endfor %}
+            
+            {% else %}
+            
+            <p class="yearly-plans-to-do-list-p">No plans in the to-do list for {{ curr_year }}  </p>
+
+            {% endif %}
+
+        </div>
+    </div>
+   
+    <div class="yearly-plan-in-progress">
+        <h3 class="yearly-plan-in-progress-heading">Yearly Plans In Progress {{ curr_year }} </h3>
+        <div>
+
+            {% if yealy_plans_inp %}
+            
+            {% for yearly_plan_p in yealy_plans_inp %}
+            
+            
+            <p class="yearly-plan-in-progress-list-p"> {{ yearly_plan_p.yearly_plan }} </p>
+            
+            <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="yearly_id" value="{{ yearly_plan_p.id }}">
+            <button type="submit" name="yearlyplancomp" class="yearly-plan-complete-btn">Completed</button>
+            </form>
+            {% endfor %}
+            
+            {% else %}
+            
+            <p class="yearly-plan-in-progress-list-p"> No plans in the In Progress list for {{ curr_year }} </p>
+            {% endif %}
+
+        </div>
+    </div>
+   
+    <div class="yearly-plans-all-completed">
+        <h3 class="assignments-all-completed-heading">Completed Yearly Plans {{ curr_year }}  </h3>
+        <div>
+
+            {% if yearly_plans_completed %}
+            
+            {% for yearly_plan_c in yearly_plans_completed %}
+            
+            <p class="yearly-plans-completed-list-p"> {{ yearly_plan_c.yearly_plan }} </p>
+            
+            {% endfor %}
+            
+            {% else %}
+            <p class="yearly-plans-completed-list-p"> No plans in the completed list for {{ curr_year }} </p>
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
