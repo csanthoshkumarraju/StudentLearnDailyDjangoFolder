@@ -1,0 +1,105 @@
+{% extends "studentloginbase.html" %}
+
+{% load static %}
+
+{% block css %}
+
+    <link rel="stylesheet" href="{% static 'studentmonthlyapp.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+
+{% endblock css %}
+
+{% block content %}
+
+
+<section id="student-monthly-plan-id" class="Student-monthly-plan-section">
+    <h2 class="student-monthly-heading">Monthly Plans</h2>
+   
+    <div class="add-monthly-plan-form">
+        <h3 class="student-monthly-plan"></h3>
+        <form class="add-monthly-plan-submit-form" method="post">
+            {% csrf_token %}
+            <label for="Adname">Add Monthly Plan</label><br>
+            {{ form.student_monthly_plan }}
+            <input type="submit"  name="addmonthlyplan" value="Add Monthly Plan" class="add-monthly-plan-button">
+        </form>
+    </div>
+   
+    <div class="monthly-plans-to-do">
+        <h3 class="monthly-plans-to-do-heading">Plans to Do in {{ curr_month }} - {{ curr_year }}  </h3>
+        <div>
+
+            {% if monthly_plan_todos %}
+            
+            {% for monthlyplantodo in monthly_plan_todos %}
+            
+            <p class="monthly-plans-to-do-list-p"> {{ monthlyplantodo.student_monthly_plan }} </p>
+            
+            <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="monthly_id" value="{{ monthlyplantodo.id }}">
+            <button type="submit" name="monthly_in_progress_btn"  class="monthly-plans-to-do-in-progress-btn">In Progress</button>
+            
+            </form>
+            {% endfor %}
+            
+            {% else %}
+            <p class="monthly-plans-to-do-list-p">There are no monthly to do plans in {{ curr_month }}</p>
+            
+            {% endif %}
+
+        </div>
+    </div>
+   
+    <div class="monthly-plan-in-progress">
+        <h3 class="monthly-plan-in-progress-heading">Monthly {{ curr_month }} Plans In Progress</h3>
+        <div>
+
+            {% if monthly_plan_inp %}
+            
+                {% for monthly_plan in monthly_plan_inp %}
+                
+                <p class="monthly-plan-in-progress-list-p"> {{ monthly_plan.student_monthly_plan }}   </p>
+                
+                <form method="post">
+                {% csrf_token %}
+                <input type="hidden" name="monthly_id" value="{{ monthly_plan.id }}">
+                <button type="submit" name="monthly_plan_completed"  class="monthly-plan-complete-btn">Completed</button>
+                
+                </form>
+                {% endfor %}
+
+            
+            {% else %}
+            <p class="monthly-plan-in-progress-list-p">There are no monthly In progress plans in {{ curr_month }}</p>
+            {% endif %}
+
+        </div>
+    </div>
+   
+    <div class="monthly-plans-all-completed">
+        <h3 class="assignments-all-completed-heading">Completed Monthly Plans</h3>
+        <div>
+
+            {% if monthly_plan_completed %}
+            
+            {% for monthly_plan in monthly_plan_completed %}
+            
+            <p class="monthly-plans-completed-list-p"> {{ monthly_plan.student_monthly_plan }}  </p>
+            {% endfor %}
+            
+            {% else %}
+            
+            <p class="monthly-plans-completed-list-p">There are no monthly completed plans in {{ curr_month }}</p>
+            {% endif %}
+
+          
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+
+
