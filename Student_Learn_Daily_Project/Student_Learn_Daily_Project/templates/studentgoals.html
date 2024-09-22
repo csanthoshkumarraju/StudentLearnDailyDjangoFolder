@@ -1,0 +1,100 @@
+{% extends "studentloginbase.html" %}
+{% load static %}
+
+
+{% block css %}
+
+    <link rel="stylesheet" href="{% static 'studentgoals.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+{% endblock css %}
+
+
+
+{% block content %}
+
+
+<section id="student-goal-id" class="Student-goal-section">
+    <h2 class="student-goal-heading">Goals</h2>
+    <div class="goals-add-form">
+        <form method="post">
+            {% csrf_token %}
+            <label for="gname">Goal</label><br>
+            {{  form.goal  }}
+            <div><input type="submit" name="addgoal" value="Add Goal" class="add-goal-button"></div>
+        </form>
+    </div>
+
+    <div class="student-goals--two-divs">
+        <div class="student-added-goals">
+            <h3>Added Goals</h3>
+
+                {% if added_goals %}
+                
+                {% for added_goal in added_goals %}
+                <div class="student-added-goals-edit">
+                <p>  {{ added_goal.goal }} </p>
+                
+                <form method="post">
+                {% csrf_token %}
+                <input type="hidden" name="goal_id" value = {{ added_goal.id }}>
+                <button type="submit" name="completed_goal_btn"  class="goal-complete-button">Completed  <i class="fa-solid fa-square-check"></i></button>
+                </form>
+
+                <form method="post">
+                {% csrf_token %}
+                <input type="hidden" name="goal_id" value={{ added_goal.id }}>
+                <button type="submit" name="delete_add_btn"  class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+                </form>
+            
+            </div>
+                {% endfor %}
+                
+                
+                {% else %}
+                <p>No added goals</p>
+                {% endif %}
+            
+
+        </div>
+
+        <div class="student-completed-goals">
+            <h3>Completed Goals</h3>
+
+
+            {% if completed_goals %}
+            
+            {% for completed_goal in completed_goals %}
+            
+            <div class="student-completed-goals-edit">
+                <p>  {{ completed_goal.goal }} </p>
+
+                <form method="post">
+                {% csrf_token %}
+                <input type="hidden" name="goal_id" value= {{ completed_goal.id }}>
+                <button type="submit" name="todo_goal_btn"  class="goal-complete-button">To Do <i class="fa-solid fa-rotate-left"></i></button>
+                </form>
+                
+                <form method="post">
+                {% csrf_token %}
+                <input type="hidden" name="goal_id"  value={{ completed_goal.id }}>
+                <button type="submit" name="delete_comp_btn"  class="goal-delete-button">Delete <i class="fa-solid fa-trash"></i></button>
+                </form>
+
+            </div>
+            
+
+            {% endfor %}
+            
+            {% else %}
+                <p> There are no completed goals </p>
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock content %}
