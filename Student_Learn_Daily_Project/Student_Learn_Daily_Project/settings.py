@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'studentyearlyapp',
     'studentgoalsapp',
     'studentnotesapp',
+    'studentcollaborateapp',
 ]
 
 MIDDLEWARE = [

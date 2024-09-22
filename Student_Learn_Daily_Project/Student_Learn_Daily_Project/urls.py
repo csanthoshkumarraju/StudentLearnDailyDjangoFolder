@@ -30,5 +30,6 @@ urlpatterns = [
     path('', include('studentyearlyapp.urls')),
     path('', include('studentgoalsapp.urls')),
     path('', include('studentnotesapp.urls')),
+    path('', include('studentcollaborateapp.urls')),
 ]
 

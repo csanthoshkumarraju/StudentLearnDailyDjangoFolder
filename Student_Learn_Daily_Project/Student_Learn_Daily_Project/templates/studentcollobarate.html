@@ -1,0 +1,75 @@
+{% extends "studentloginbase.html" %}
+{% load static %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'studentcollobarate.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+{% endblock css %}
+
+
+{% block content %}
+
+<section id="student-collaboration-id" class="Student-collaboration-section">
+    <h2 class="student-collaboration-heading">Collaboration</h2>
+    <a href="#message-form" class="button">Send a Message</a>
+
+    {% for message in messages_list %}
+    <div class="{% if message.student == current_user %}self-messege{% else %}others-message{% endif %}">
+        <h5>
+            {% if message.student == current_user %}
+                You
+            {% else %}
+                {{ message.student.first_name }} {{ message.student.last_name }} 
+            {% endif %}
+            - {{ message.date|date:"h:i A d-M-Y" }}
+        </h5>
+        <p id="message-{{ message.id }}">{{ message.message }}</p>
+        
+        {% if message.student == current_user %}
+            <form action="" method="post" style="display:inline;">
+                {% csrf_token %}
+                <input type="hidden" name="message_id" value="{{ message.id }}">
+                <button type="button" class="message-edit-button" onclick="showEditForm({{ message.id }});">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+                <button type="submit" name="delete_message" class="message-delete-button">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </form>
+            <form id="edit-form-{{ message.id }}" action="" method="post" style="display:none;">
+                {% csrf_token %}
+                <input type="hidden" name="message_id" value="{{ message.id }}">
+                <input type="text" name="edited_message" value="{{ message.message }}">
+                <button type="submit" name="edit_message" class="message-edit-submit-button">  Save</button>
+            </form>
+        {% endif %}
+    </div>
+{% endfor %}
+
+    <form id="message-form" method="post">
+        {% csrf_token %}
+        {{ form.message }}
+        <button type="submit" name="sendmessage" class="send-messege-button">
+            <i class="fa-solid fa-paper-plane"></i> Send
+        </button>
+    </form>
+
+
+    <script>
+        function showEditForm(messageId) {
+            document.getElementById('edit-form-' + messageId).style.display = 'inline';
+            document.getElementById('message-' + messageId).style.display = 'none';
+        }
+        </script>
+</section>
+
+
+
+
+
+
+
+{% endblock content %}
