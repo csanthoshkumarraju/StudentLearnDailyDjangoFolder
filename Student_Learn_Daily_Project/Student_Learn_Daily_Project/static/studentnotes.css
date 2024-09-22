@@ -1,0 +1,435 @@
+.Student-notes-section {
+    background-color: #CCCCFF;
+    padding: 1.5rem;
+}
+
+.student-notes-heading {
+    text-align: center;
+    padding: 3.3rem;
+}
+
+.student-notes-form {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+    text-align: center;
+}
+
+.add-note-button {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background-color: #3F00FF;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.add-note-button:hover {
+    color: #6F00FF;
+    background-color: white;
+}
+
+.add-notes-input-box {
+    width: 20rem;
+    height: 5rem;
+    margin: 2rem;
+}
+
+.student-added-notes {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    border: 0.063rem solid #1DB954;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #C0C0FF;
+    text-align: center;
+}
+
+.student-added-note-edit {
+    border: 0.063rem solid #1DB954;
+    border-radius: 0.3125rem;
+    width: 30rem;
+    height: auto;
+    padding: 1rem;
+    margin-left: 4rem;
+    text-align: center;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.note-edit-button {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background-color: #FF5F15;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin: 2rem;
+}
+
+.note-edit-button:hover {
+    color: #FF5F15;
+    background-color: white;
+}
+
+.note-delete-button {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background-color: #FF0800;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin: 2rem;
+}
+
+.note-delete-button:hover {
+    color: #FF0800;
+    background-color: white;
+}
+
+/* @media only screen and (min-width: 1141px) and (max-width: 1279px) {
+        
+} */
+/*  
+@media only screen and (min-width: 800px) and (max-width: 1140px) {
+} */
+
+@media only screen and (min-width: 640px) and (max-width: 799px) {
+       .student-notes-form {
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .add-note-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #3F00FF;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .add-note-button:hover {
+        color: #6F00FF;
+        background-color: white;
+    }
+
+    .add-notes-input-box {
+        width: 25rem;
+        height: 10rem;
+        margin: 2rem;
+    }
+   
+    .student-added-notes {
+        width: 100%;
+        max-width: 30rem;
+        height: auto;
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .student-added-note-edit {
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        width: 25rem;
+        height: auto;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .note-edit-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #FF5F15;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .note-edit-button:hover {
+        color: #FF5F15;
+        background-color: white;
+    }
+
+    .note-delete-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #FF0800;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .note-delete-button:hover {
+        color: #FF0800;
+        background-color: white;
+    }
+  
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+     .student-notes-form {
+        width: 80%;
+        max-width: 25rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .add-note-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #3F00FF;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .add-note-button:hover {
+        color: #6F00FF;
+        background-color: white;
+    }
+
+    .add-notes-input-box {
+        width: 20rem;
+        height: 10rem;
+        margin: 2rem;
+    }
+    
+    .student-added-notes {
+        width: 80%;
+        max-width: 25rem;
+        height: auto;
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .student-added-note-edit {
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        width: 20rem;
+        height: auto;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .note-edit-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #FF5F15;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .note-edit-button:hover {
+        color: #FF5F15;
+        background-color: white;
+    }
+
+    .note-delete-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #FF0800;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .note-delete-button:hover {
+        color: #FF0800;
+        background-color: white;
+    }
+  
+}
+
+@media (max-width: 480px) { 
+        .student-notes-form {
+        width: 70%;
+        max-width: 20rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border: 0.063rem solid #1F51FF;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .add-note-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #3F00FF;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .add-goal-button:hover {
+        color: #6F00FF;
+        background-color: white;
+    }
+
+    .add-notes-input-box {
+        width: 65%;
+        max-width: 20rem;
+        height: 10rem;
+        margin: 2rem;
+    }
+    
+    .student-added-notes {
+        width: 70%;
+        max-width: 20rem;
+        height: auto;
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        padding: 2rem;
+        margin: 3rem auto;
+        background-color: #C0C0FF;
+        text-align: center;
+    }
+
+    .student-added-note-edit {
+        border: 0.063rem solid #1DB954;
+        border-radius: 0.3125rem;
+        width: 12rem;
+        height: auto;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .note-edit-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #FF5F15;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .note-edit-button:hover {
+        color: #FF5F15;
+        background-color: white;
+    }
+
+    .note-delete-button {
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background-color: #FF0800;
+        color: #fff;
+        border: 0.1rem solid grey;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    .note-delete-button:hover {
+        color: #FF0800;
+        background-color: white;
+    }
+  
+
+
+}

@@ -29,5 +29,6 @@ urlpatterns = [
     path('', include('studentmonthlyapp.urls')),
     path('', include('studentyearlyapp.urls')),
     path('', include('studentgoalsapp.urls')),
+    path('', include('studentnotesapp.urls')),
 ]
 

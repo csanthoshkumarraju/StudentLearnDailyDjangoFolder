@@ -1,0 +1,53 @@
+{% extends "studentloginbase.html" %}
+{% load static %}
+
+{% block css %}
+
+    <link rel="stylesheet" href="{% static 'studentnotes.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+{% endblock css %}
+
+{% block content %}
+
+<section id="student-notes-id" class="Student-notes-section">
+    <h2 class="student-notes-heading">Notes</h2>
+    <div class="student-notes-form">
+        <form method="post">
+            {% csrf_token %}
+            <label for="noname">Note</label><br>
+            {{form.notes }}
+            <div><input type="submit" name="addnotes" value="Add note" class="add-note-button"></div>
+        </form>
+    </div>
+
+    <div class="student-added-notes">
+        <h3>Added Notes</h3>
+
+        {% if notes %}
+        {% for note in notes %}
+        
+        <div class="student-added-note-edit">
+            <p> {{ note.notes }} </p>
+
+            <form method="post">
+                {% csrf_token %}
+            <input type="hidden" name="notes_id" value={{ note.id }} >
+            <button type="submit" name="delete_btn" class="note-delete-button"> Delete <i class="fa-solid fa-trash"></i></button>
+            </form>
+        
+        </div>
+        
+        {% endfor %}
+        
+        {% else %}
+            <p> Notes not added. Please add notes</p>
+        {% endif %}
+
+    </div>
+</section>
+
+
+
+{% endblock content %}
