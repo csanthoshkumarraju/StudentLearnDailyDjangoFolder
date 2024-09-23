@@ -1,0 +1,41 @@
+{% extends "studentloginbase.html" %}
+{% load static %}
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'studentwordguessinggame.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+{% endblock css %}
+
+{% block content %}
+<section class="word-guessing-game-section">
+    <h2 class="word-guessing-game-heading">Guess the Word</h2>
+    <div class="student-word-guessing-game">
+        <h3 class="word-heading">Hello, {{ student_name }}! Guess the Word from below</h3>
+        <p class="word-list"><b>[Apple, Banana, Cake, Door, Elephant, Flower, Guitar, House, Ice Cream, Kite]</b></p>
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="submit-word" value="Submit">
+        </form>
+        
+        {% if result_message %}
+            <p class="message {{ result_class }}">
+                {{ result_message }}
+            </p>
+        {% endif %}
+        
+        <p>Attempts left: {{ attempts_left }}</p>
+        <p>Your Score: {{ score }}</p>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="reset" value="true">
+            <input type="submit" class="submit-word" value="Restart Game">
+        </form>
+    </div>
+</section>
+
+
+{% endblock content %}

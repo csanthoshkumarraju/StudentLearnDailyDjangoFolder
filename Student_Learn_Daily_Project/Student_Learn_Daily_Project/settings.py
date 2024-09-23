@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'studentallgamesapp',
     'studentheadtailsapp',
     'studentnumberguessingapp',
+    'studentwordguessingapp',
 ]
 
 MIDDLEWARE = [
