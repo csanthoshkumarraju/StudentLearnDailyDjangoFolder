@@ -1,0 +1,74 @@
+.number-guessing-game-section {
+    background-color: #CCCCFF;
+    padding: 1.5rem;
+}
+
+.number-guessing-game-heading {
+  text-align: center;
+  padding: 3.3rem;
+}
+
+.name-heading {
+    text-align:center;
+}
+
+.student-number-guessing-game {
+    width: 50%;
+    height:auto;
+    margin: 3rem auto;
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    background-color: #C0C0FF;
+}
+.num-gue-lab,
+.number-list {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.number-guess-input {
+    width:100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid grey;
+    border-radius: 0.25rem;
+}
+
+.submit-number {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background-color: #3F00FF;
+    color: #fff;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin:1rem;
+    margin-left:30%;
+}
+
+.submit-number:hover {
+    color: #6F00FF;
+    background-color: white;
+}
+
+.correct {
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 8px;
+}
+.wrong {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 8px;
+}
