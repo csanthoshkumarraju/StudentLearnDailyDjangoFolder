@@ -32,5 +32,6 @@ urlpatterns = [
     path('', include('studentnotesapp.urls')),
     path('', include('studentcollaborateapp.urls')),
     path('', include('studentallgamesapp.urls')),
+    path('', include('studentheadtailsapp.urls')),
 ]
 

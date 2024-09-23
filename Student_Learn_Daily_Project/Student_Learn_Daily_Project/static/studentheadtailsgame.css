@@ -1,0 +1,56 @@
+.head-or-tails-game-section {
+    background-color: #CCCCFF;
+    padding: 1.5rem;
+}
+
+.head-or-tails-game-heading {
+    text-align: center;
+    padding: 3.3rem;
+}
+
+.head-or-tails-game-content {
+    width: 50%;
+    max-width: 600px; 
+    margin: 3rem auto;
+    border: 0.063rem solid #1F51FF;
+    border-radius: 0.3125rem;
+    padding: 2rem;
+    background-color: #C0C0FF;
+    text-align: center; 
+}
+
+.result p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.btn {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid grey;
+    border-radius: 0.1875rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1em;
+    color: #fff;
+    background-color: #FF5F15;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    color: #FF5F15;
+    background-color: white;
+}
+
+.btn:nth-of-type(2) {
+    background-color: #4CBB17;
+}
+
+.btn:nth-of-type(2):hover {
+    color: #4CBB17;
+    background-color: white;
+}
