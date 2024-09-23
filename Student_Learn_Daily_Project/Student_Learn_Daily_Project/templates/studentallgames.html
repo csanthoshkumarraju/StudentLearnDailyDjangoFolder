@@ -1,0 +1,45 @@
+{% extends "studentloginbase.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'studentallgames.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+{% endblock css %}
+
+
+{% block content %}
+
+
+
+<section id="student-games-section-id" class="student-games-section">
+    <h2 class="student-games-heading">Games</h2>
+    <div class="student-four-games">
+    <div class="number-guessing-game-grid-1">
+         <img src="/static/Leonardo_Phoenix_Gradient_background_light_gray_to_pastel_blue_2.jpg" alt="Number Guessing Game" class="number-guessing-game-img">
+         <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
+    </div>
+     
+    <div class="word-guessing-game-grid-2">
+         <img src="/static/Leonardo_Phoenix_Gradient_background_light_gray_to_pastel_blue_3.jpg" alt="word Guessing Game" class="word-guessing-game-img">
+         <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
+    </div>
+      
+      <div class="missing-character-guessing-game-grid-3">
+         <img src="/static/Leonardo_Phoenix_Gradient_background_light_gray_to_pastel_blue_2 (1).jpg" class="missing-character-game-img">
+         <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
+    </div>
+       <div class="coin-toss-guessing-game-grid-4">
+         <img src="/static/Leonardo_Phoenix_Gradient_background_light_gray_to_pastel_blue_0.jpg" class="coin-toss-game-img">
+         <a href="#" class="games-grid-button"> Play <i class="fa-solid fa-play"></i> </a>
+    </div>
+      
+      
+   </div>
+ 
+</section>
+
+
+{% endblock content %}
+
